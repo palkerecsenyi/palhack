@@ -28,5 +28,5 @@
     "default_popup": "dist/popup.html",
     "show_matches": ["*://www.amazon.com/*", "*://www.amazon.co.uk/*"]
   },
-  "permissions": ["http://localhost:78393/api/v1/*"]
+  "permissions": ["http://localhost:30000/api/v1/*"]
 }

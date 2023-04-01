@@ -1,17 +1,19 @@
 import Container from "./elements/Container";
-import React from "react";
+import React, {useState} from "react";
 import Carbonabar from "./elements/Navbar"
 import CartTotal from "./components/CartTotal"
 import LoginPage from "./components/LoginPage"
 
 export default function App() {
-    const loggedIn = false
+    const [loggedIn, setLoggedIn] = useState(false);
     return <Container>
         <Carbonabar />
         {loggedIn ? <>
             <CartTotal />
         </> : <>
-            <LoginPage />
+            <LoginPage
+                onChange={l => setLoggedIn(l)}
+            />
         </>}
     </Container>
 }
