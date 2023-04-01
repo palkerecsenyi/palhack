@@ -46,7 +46,16 @@ export function getCurrentResult(dom = document) {
         }
     }
     const originalPrice = dom.getElementsByClassName("a-text-price");
-    const price = (originalPrice.length && originalPrice[0].dataset.aStrike) ? originalPrice[0].innerText : dom.getElementById("corePrice_feature_div").getElementsByClassName("a-offscreen")[0].innerText;
+    let price;
+    if (originalPrice.length && originalPrice[0].dataset.aStrike) {
+        price = originalPrice[0].innerText;
+    } else {
+        price = dom.getElementById("corePrice_feature_div");
+        if (price == null) {
+            return null;
+        }
+        price = dom.getElementById("corePrice_feature_div").getElementsByClassName("a-offscreen")[0].innerText;
+    }
     const categoryNumber = document.getElementById("searchDropdownBox").dataset.navSelected;
     const category = document.getElementById("searchDropdownBox").children[categoryNumber].innerText
     if (title === null) {
