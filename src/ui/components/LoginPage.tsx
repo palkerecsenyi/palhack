@@ -9,12 +9,13 @@ async function login(username: string, password: string) {
     url.searchParams.append("password", password);
     const response = await fetch(url);
     if (response.ok) {
-        if (await response.text() == "sad"){
+        const responseText = await response.text()
+        if (responseText == "sad"){
             //login is invalid
-            return false;
+            return undefined;
         }else{
             //login is valid
-            return true;
+            return responseText;
         }
     } else {
         console.error(response)
@@ -23,7 +24,7 @@ async function login(username: string, password: string) {
 }
 
 interface props {
-    onChange(loggedIn: boolean): void
+    onChange(token: string | undefined): void
 }
 
 export default function LoginPage(
@@ -34,13 +35,10 @@ export default function LoginPage(
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
-    const handleSubmit = useCallback((e: FormEvent) => {
-        login(username, password).then(loginSuccessful => {
-            if (loginSuccessful) {
-                onChange(true)
-            }
-        })
+    const handleSubmit = useCallback(async (e: FormEvent) => {
         e.preventDefault()
+        const token = await login(username, password)
+        onChange(token)
     }, [username, password])
 
     return <div>

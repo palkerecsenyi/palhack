@@ -71,7 +71,7 @@ export function getCurrentResult(dom = document) {
     if (title === null) {
         return null;
     } else {
-        return { title: dom.getElementById("productTitle").innerText, manufacturer: manufacturer, name: series ? series : title, category: category, series: series, weight: weight, url: window.location.href, price: price.replaceAll(/^[0-9]/, ""), currency: getCurrency(price[0]) };
+        return { title: dom.getElementById("productTitle").innerText, manufacturer: manufacturer, name: series ? series : title, category: category, series: series, weight: weight, url: window.location.href, price: price.replaceAll(/^[0-9]/g, ""), currency: getCurrency(price[0]) };
     }
 }
 

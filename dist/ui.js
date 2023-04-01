@@ -1,4 +1,5 @@
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/ui/styles/cartTotal.module.scss":
@@ -7,7 +8,6 @@
   \**************************************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -39,7 +39,6 @@ ___CSS_LOADER_EXPORT___.locals = {
   \**************************************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -69,7 +68,6 @@ ___CSS_LOADER_EXPORT___.locals = {
   \***********************************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -102,7 +100,6 @@ ___CSS_LOADER_EXPORT___.locals = {
   \**************************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -130,7 +127,6 @@ ___CSS_LOADER_EXPORT___.push([module.id, "h1, h2, h3, h4, h5, h6, p {\n  margin:
   \***********************************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -160,7 +156,6 @@ ___CSS_LOADER_EXPORT___.locals = {
   \*****************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 /*
@@ -255,7 +250,6 @@ module.exports = function (cssWithMappingToString) {
   \************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 module.exports = function (item) {
@@ -281,7 +275,6 @@ module.exports = function (item) {
   \*************************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-"use strict";
 /**
  * @license React
  * react-dom.development.js
@@ -30155,7 +30148,6 @@ if (
   \******************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-"use strict";
 
 
 var m = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
@@ -30188,7 +30180,6 @@ if (false) {} else {
   \*****************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 function checkDCE() {
@@ -30232,7 +30223,6 @@ if (false) {} else {
   \*****************************************************/
 /***/ ((module, exports, __webpack_require__) => {
 
-"use strict";
 /* module decorator */ module = __webpack_require__.nmd(module);
 /**
  * @license React
@@ -32983,7 +32973,6 @@ if (
   \*************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 if (false) {} else {
@@ -32999,7 +32988,6 @@ if (false) {} else {
   \*************************************************************/
 /***/ ((__unused_webpack_module, exports) => {
 
-"use strict";
 /**
  * @license React
  * scheduler.development.js
@@ -33644,7 +33632,6 @@ if (
   \*****************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 if (false) {} else {
@@ -33660,7 +33647,6 @@ if (false) {} else {
   \*********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -33715,7 +33701,6 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
   \*********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -33770,7 +33755,6 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
   \******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -33825,7 +33809,6 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
   \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -33880,7 +33863,6 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
   \******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -33935,7 +33917,6 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
   \****************************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 var stylesInDOM = [];
@@ -34029,7 +34010,6 @@ module.exports = function (list, options) {
   \********************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 var memo = {};
@@ -34073,7 +34053,6 @@ module.exports = insertBySelector;
   \**********************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -34093,7 +34072,6 @@ module.exports = insertStyleElement;
   \**********************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -34113,7 +34091,6 @@ module.exports = setAttributesWithoutAttributes;
   \***************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -34184,7 +34161,6 @@ module.exports = domAPI;
   \*********************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -34208,7 +34184,6 @@ module.exports = styleTagTransform;
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ App)
@@ -34219,18 +34194,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _elements_Navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./elements/Navbar */ "./src/ui/elements/Navbar.tsx");
 /* harmony import */ var _components_CartTotal__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/CartTotal */ "./src/ui/components/CartTotal.tsx");
 /* harmony import */ var _components_LoginPage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/LoginPage */ "./src/ui/components/LoginPage.tsx");
+/* harmony import */ var _data_auth__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./data/auth */ "./src/ui/data/auth.ts");
+/* harmony import */ var _components_Leaderboard__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/Leaderboard */ "./src/ui/components/Leaderboard.tsx");
+
+
 
 
 
 
 
 function App() {
-    var _a = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false), loggedIn = _a[0], setLoggedIn = _a[1];
+    var _a = (0,_data_auth__WEBPACK_IMPORTED_MODULE_5__.useAuth)(), auth = _a[0], setAuth = _a[1];
     return react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_elements_Container__WEBPACK_IMPORTED_MODULE_0__["default"], null,
         react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_elements_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], null),
-        loggedIn ? react__WEBPACK_IMPORTED_MODULE_1___default().createElement((react__WEBPACK_IMPORTED_MODULE_1___default().Fragment), null,
-            react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_components_CartTotal__WEBPACK_IMPORTED_MODULE_3__["default"], null)) : react__WEBPACK_IMPORTED_MODULE_1___default().createElement((react__WEBPACK_IMPORTED_MODULE_1___default().Fragment), null,
-            react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_components_LoginPage__WEBPACK_IMPORTED_MODULE_4__["default"], { onChange: function (l) { return setLoggedIn(l); } })));
+        auth ? react__WEBPACK_IMPORTED_MODULE_1___default().createElement((react__WEBPACK_IMPORTED_MODULE_1___default().Fragment), null,
+            react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_components_CartTotal__WEBPACK_IMPORTED_MODULE_3__["default"], null),
+            react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_components_Leaderboard__WEBPACK_IMPORTED_MODULE_6__["default"], null)) : react__WEBPACK_IMPORTED_MODULE_1___default().createElement((react__WEBPACK_IMPORTED_MODULE_1___default().Fragment), null,
+            react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_components_LoginPage__WEBPACK_IMPORTED_MODULE_4__["default"], { onChange: setAuth })));
 }
 
 
@@ -34242,7 +34222,6 @@ function App() {
   \*****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ CartTotal)
@@ -34320,13 +34299,35 @@ function CartTotal() {
 
 /***/ }),
 
+/***/ "./src/ui/components/Leaderboard.tsx":
+/*!*******************************************!*\
+  !*** ./src/ui/components/Leaderboard.tsx ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Leaderboard)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _data_leaderboard__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../data/leaderboard */ "./src/ui/data/leaderboard.ts");
+
+
+function Leaderboard() {
+    var leaderboard = (0,_data_leaderboard__WEBPACK_IMPORTED_MODULE_1__.useLeaderboard)();
+    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null);
+}
+
+
+/***/ }),
+
 /***/ "./src/ui/components/LoginPage.tsx":
 /*!*****************************************!*\
   !*** ./src/ui/components/LoginPage.tsx ***!
   \*****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ LoginPage)
@@ -34374,7 +34375,7 @@ var __generator = (undefined && undefined.__generator) || function (thisArg, bod
 
 function login(username, password) {
     return __awaiter(this, void 0, void 0, function () {
-        var base, url, response;
+        var base, url, response, responseText;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
@@ -34388,13 +34389,14 @@ function login(username, password) {
                     if (!response.ok) return [3 /*break*/, 3];
                     return [4 /*yield*/, response.text()];
                 case 2:
-                    if ((_a.sent()) == "sad") {
+                    responseText = _a.sent();
+                    if (responseText == "sad") {
                         //login is invalid
-                        return [2 /*return*/, false];
+                        return [2 /*return*/, undefined];
                     }
                     else {
                         //login is valid
-                        return [2 /*return*/, true];
+                        return [2 /*return*/, responseText];
                     }
                     return [3 /*break*/, 4];
                 case 3:
@@ -34406,17 +34408,24 @@ function login(username, password) {
     });
 }
 function LoginPage(_a) {
+    var _this = this;
     var onChange = _a.onChange;
     var _b = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(''), username = _b[0], setUsername = _b[1];
     var _c = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(''), password = _c[0], setPassword = _c[1];
-    var handleSubmit = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(function (e) {
-        login(username, password).then(function (loginSuccessful) {
-            if (loginSuccessful) {
-                onChange(true);
+    var handleSubmit = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(function (e) { return __awaiter(_this, void 0, void 0, function () {
+        var token;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    e.preventDefault();
+                    return [4 /*yield*/, login(username, password)];
+                case 1:
+                    token = _a.sent();
+                    onChange(token);
+                    return [2 /*return*/];
             }
         });
-        e.preventDefault();
-    }, [username, password]);
+    }); }, [username, password]);
     return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null,
         react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", { onSubmit: handleSubmit, className: _styles_inputs_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].form },
             react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", { className: _styles_inputs_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].credentials },
@@ -34431,13 +34440,42 @@ function LoginPage(_a) {
 
 /***/ }),
 
+/***/ "./src/ui/data/auth.ts":
+/*!*****************************!*\
+  !*** ./src/ui/data/auth.ts ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "useAuth": () => (/* binding */ useAuth)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+var useAuth = function () {
+    var _a;
+    var _b = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)((_a = localStorage.getItem("token")) !== null && _a !== void 0 ? _a : undefined), authState = _b[0], setAuthState = _b[1];
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+        if (authState) {
+            localStorage.setItem("token", authState);
+        }
+        else {
+            localStorage.removeItem("token");
+        }
+    }, [authState]);
+    return [authState, setAuthState];
+};
+
+
+/***/ }),
+
 /***/ "./src/ui/data/cart.ts":
 /*!*****************************!*\
   !*** ./src/ui/data/cart.ts ***!
   \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "getCartEmissions": () => (/* binding */ getCartEmissions)
@@ -34496,13 +34534,103 @@ var getCartEmissions = function () { return __awaiter(void 0, void 0, void 0, fu
 
 /***/ }),
 
+/***/ "./src/ui/data/leaderboard.ts":
+/*!************************************!*\
+  !*** ./src/ui/data/leaderboard.ts ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "useLeaderboard": () => (/* binding */ useLeaderboard)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _vars__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./vars */ "./src/ui/data/vars.ts");
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (undefined && undefined.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (g && (g = 0, op[0] && (_ = 0)), _) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+
+
+var useLeaderboard = function () {
+    var _a = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(), leaderboard = _a[0], setLeaderboard = _a[1];
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+        (function () { return __awaiter(void 0, void 0, void 0, function () {
+            var response, _a, _b;
+            return __generator(this, function (_c) {
+                switch (_c.label) {
+                    case 0: return [4 /*yield*/, fetch("".concat(_vars__WEBPACK_IMPORTED_MODULE_1__.serverAddress, "/api/v1/getLeaderboard"))];
+                    case 1:
+                        response = _c.sent();
+                        _b = (_a = console).log;
+                        return [4 /*yield*/, response.json()];
+                    case 2:
+                        _b.apply(_a, [_c.sent()]);
+                        return [2 /*return*/];
+                }
+            });
+        }); })();
+    }, []);
+    return leaderboard;
+};
+
+
+/***/ }),
+
+/***/ "./src/ui/data/vars.ts":
+/*!*****************************!*\
+  !*** ./src/ui/data/vars.ts ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "serverAddress": () => (/* binding */ serverAddress)
+/* harmony export */ });
+var serverAddress = "https://localhost:3000";
+
+
+/***/ }),
+
 /***/ "./src/ui/elements/Container.tsx":
 /*!***************************************!*\
   !*** ./src/ui/elements/Container.tsx ***!
   \***************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ Container)
@@ -34526,7 +34654,6 @@ function Container(_a) {
   \************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ Carbonabar)
@@ -34552,7 +34679,6 @@ function Carbonabar() {
   \*************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 module.exports = __webpack_require__.p + "8b9cf48aec60a4935e9e.svg";
 
 /***/ }),
@@ -34561,9 +34687,188 @@ module.exports = __webpack_require__.p + "8b9cf48aec60a4935e9e.svg";
 /*!**********************!*\
   !*** ./src/utils.js ***!
   \**********************/
-/***/ (() => {
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /home/palk/Documents/Projects/Uni/hack23/palhack/src/utils.js: Unexpected token, expected \")\" (46:4)\n\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m originalPrice \u001b[33m=\u001b[39m dom\u001b[33m.\u001b[39mgetElementsByClassName(\u001b[32m\"a-text-price\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (originalPrice\u001b[33m.\u001b[39mlength \u001b[33m&&\u001b[39m originalPrice[\u001b[35m0\u001b[39m]\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     \u001b[36mconst\u001b[39m price \u001b[33m=\u001b[39m originalPrice\u001b[33m.\u001b[39mlength \u001b[33m?\u001b[39m originalPrice[\u001b[35m0\u001b[39m]\u001b[33m.\u001b[39minnerText \u001b[33m:\u001b[39m dom\u001b[33m.\u001b[39mgetElementById(\u001b[32m\"corePrice_feature_div\"\u001b[39m)\u001b[33m.\u001b[39mgetElementsByClassName(\u001b[32m\"a-offscreen\"\u001b[39m)[\u001b[35m0\u001b[39m]\u001b[33m.\u001b[39minnerText\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m categoryNumber \u001b[33m=\u001b[39m document\u001b[33m.\u001b[39mgetElementById(\u001b[32m\"searchDropdownBox\"\u001b[39m)\u001b[33m.\u001b[39mdataset\u001b[33m.\u001b[39mnavSelected\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m     \u001b[36mconst\u001b[39m category \u001b[33m=\u001b[39m document\u001b[33m.\u001b[39mgetElementById(\u001b[32m\"searchDropdownBox\"\u001b[39m)\u001b[33m.\u001b[39mchildren[categoryNumber]\u001b[33m.\u001b[39minnerText\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m     \u001b[36mif\u001b[39m (title \u001b[33m===\u001b[39m \u001b[36mnull\u001b[39m) {\u001b[0m\n    at instantiate (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parse-error/credentials.ts:62:21)\n    at toParseError (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parse-error.ts:60:12)\n    at JSXParserMixin.raise (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/tokenizer/index.ts:1490:19)\n    at JSXParserMixin.unexpected (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/tokenizer/index.ts:1531:16)\n    at JSXParserMixin.expect (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/util.ts:145:28)\n    at JSXParserMixin.parseHeaderExpression (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:855:10)\n    at JSXParserMixin.parseIfStatement (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:1008:22)\n    at JSXParserMixin.parseStatementContent (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:476:21)\n    at JSXParserMixin.parseStatementLike (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:417:17)\n    at JSXParserMixin.parseStatementListItem (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:366:17)\n    at JSXParserMixin.parseBlockOrModuleBlockBody (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:1360:16)\n    at JSXParserMixin.parseBlockBody (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:1333:10)\n    at JSXParserMixin.parseBlock (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:1301:10)\n    at JSXParserMixin.parseFunctionBody (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/expression.ts:2552:24)\n    at JSXParserMixin.parseFunctionBodyAndFinish (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/expression.ts:2523:10)\n    at callback (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:1605:12)\n    at JSXParserMixin.withSmartMixTopicForbiddingContext (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/expression.ts:3051:14)\n    at JSXParserMixin.parseFunction (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:1603:10)\n    at JSXParserMixin.parseFunctionStatement (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:997:17)\n    at JSXParserMixin.parseStatementContent (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:460:21)\n    at JSXParserMixin.parseStatementLike (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:417:17)\n    at JSXParserMixin.parseStatementListItem (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:366:17)\n    at JSXParserMixin.parseExportDeclaration (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:2539:17)\n    at JSXParserMixin.maybeParseExportDeclaration (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:2458:31)\n    at JSXParserMixin.parseExport (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:2361:29)\n    at JSXParserMixin.parseStatementContent (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:580:25)\n    at JSXParserMixin.parseStatementLike (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:417:17)\n    at JSXParserMixin.parseModuleItem (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:354:17)\n    at JSXParserMixin.parseBlockOrModuleBlockBody (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:1359:16)\n    at JSXParserMixin.parseBlockBody (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:1333:10)\n    at JSXParserMixin.parseProgram (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:226:10)\n    at JSXParserMixin.parseTopLevel (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:208:25)\n    at JSXParserMixin.parse (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/index.ts:45:10)\n    at parse (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/index.ts:67:38)\n    at parser (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/core/src/parser/index.ts:28:19)\n    at parser.next (<anonymous>)\n    at normalizeFile (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/core/src/transformation/normalize-file.ts:51:24)\n    at normalizeFile.next (<anonymous>)\n    at run (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/core/src/transformation/index.ts:38:36)\n    at run.next (<anonymous>)\n    at transform (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/core/src/transform.ts:29:20)\n    at transform.next (<anonymous>)\n    at step (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/gensync/index.js:261:32)\n    at /home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/gensync/index.js:273:13\n    at async.call.result.err.err (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/gensync/index.js:223:11)");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "getCart": () => (/* binding */ getCart),
+/* harmony export */   "getCurrentResult": () => (/* binding */ getCurrentResult),
+/* harmony export */   "getProductDetail": () => (/* binding */ getProductDetail),
+/* harmony export */   "parseCart": () => (/* binding */ parseCart)
+/* harmony export */ });
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return exports; }; var exports = {}, Op = Object.prototype, hasOwn = Op.hasOwnProperty, defineProperty = Object.defineProperty || function (obj, key, desc) { obj[key] = desc.value; }, $Symbol = "function" == typeof Symbol ? Symbol : {}, iteratorSymbol = $Symbol.iterator || "@@iterator", asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator", toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag"; function define(obj, key, value) { return Object.defineProperty(obj, key, { value: value, enumerable: !0, configurable: !0, writable: !0 }), obj[key]; } try { define({}, ""); } catch (err) { define = function define(obj, key, value) { return obj[key] = value; }; } function wrap(innerFn, outerFn, self, tryLocsList) { var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator, generator = Object.create(protoGenerator.prototype), context = new Context(tryLocsList || []); return defineProperty(generator, "_invoke", { value: makeInvokeMethod(innerFn, self, context) }), generator; } function tryCatch(fn, obj, arg) { try { return { type: "normal", arg: fn.call(obj, arg) }; } catch (err) { return { type: "throw", arg: err }; } } exports.wrap = wrap; var ContinueSentinel = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var IteratorPrototype = {}; define(IteratorPrototype, iteratorSymbol, function () { return this; }); var getProto = Object.getPrototypeOf, NativeIteratorPrototype = getProto && getProto(getProto(values([]))); NativeIteratorPrototype && NativeIteratorPrototype !== Op && hasOwn.call(NativeIteratorPrototype, iteratorSymbol) && (IteratorPrototype = NativeIteratorPrototype); var Gp = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(IteratorPrototype); function defineIteratorMethods(prototype) { ["next", "throw", "return"].forEach(function (method) { define(prototype, method, function (arg) { return this._invoke(method, arg); }); }); } function AsyncIterator(generator, PromiseImpl) { function invoke(method, arg, resolve, reject) { var record = tryCatch(generator[method], generator, arg); if ("throw" !== record.type) { var result = record.arg, value = result.value; return value && "object" == _typeof(value) && hasOwn.call(value, "__await") ? PromiseImpl.resolve(value.__await).then(function (value) { invoke("next", value, resolve, reject); }, function (err) { invoke("throw", err, resolve, reject); }) : PromiseImpl.resolve(value).then(function (unwrapped) { result.value = unwrapped, resolve(result); }, function (error) { return invoke("throw", error, resolve, reject); }); } reject(record.arg); } var previousPromise; defineProperty(this, "_invoke", { value: function value(method, arg) { function callInvokeWithMethodAndArg() { return new PromiseImpl(function (resolve, reject) { invoke(method, arg, resolve, reject); }); } return previousPromise = previousPromise ? previousPromise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(innerFn, self, context) { var state = "suspendedStart"; return function (method, arg) { if ("executing" === state) throw new Error("Generator is already running"); if ("completed" === state) { if ("throw" === method) throw arg; return doneResult(); } for (context.method = method, context.arg = arg;;) { var delegate = context.delegate; if (delegate) { var delegateResult = maybeInvokeDelegate(delegate, context); if (delegateResult) { if (delegateResult === ContinueSentinel) continue; return delegateResult; } } if ("next" === context.method) context.sent = context._sent = context.arg;else if ("throw" === context.method) { if ("suspendedStart" === state) throw state = "completed", context.arg; context.dispatchException(context.arg); } else "return" === context.method && context.abrupt("return", context.arg); state = "executing"; var record = tryCatch(innerFn, self, context); if ("normal" === record.type) { if (state = context.done ? "completed" : "suspendedYield", record.arg === ContinueSentinel) continue; return { value: record.arg, done: context.done }; } "throw" === record.type && (state = "completed", context.method = "throw", context.arg = record.arg); } }; } function maybeInvokeDelegate(delegate, context) { var methodName = context.method, method = delegate.iterator[methodName]; if (undefined === method) return context.delegate = null, "throw" === methodName && delegate.iterator["return"] && (context.method = "return", context.arg = undefined, maybeInvokeDelegate(delegate, context), "throw" === context.method) || "return" !== methodName && (context.method = "throw", context.arg = new TypeError("The iterator does not provide a '" + methodName + "' method")), ContinueSentinel; var record = tryCatch(method, delegate.iterator, context.arg); if ("throw" === record.type) return context.method = "throw", context.arg = record.arg, context.delegate = null, ContinueSentinel; var info = record.arg; return info ? info.done ? (context[delegate.resultName] = info.value, context.next = delegate.nextLoc, "return" !== context.method && (context.method = "next", context.arg = undefined), context.delegate = null, ContinueSentinel) : info : (context.method = "throw", context.arg = new TypeError("iterator result is not an object"), context.delegate = null, ContinueSentinel); } function pushTryEntry(locs) { var entry = { tryLoc: locs[0] }; 1 in locs && (entry.catchLoc = locs[1]), 2 in locs && (entry.finallyLoc = locs[2], entry.afterLoc = locs[3]), this.tryEntries.push(entry); } function resetTryEntry(entry) { var record = entry.completion || {}; record.type = "normal", delete record.arg, entry.completion = record; } function Context(tryLocsList) { this.tryEntries = [{ tryLoc: "root" }], tryLocsList.forEach(pushTryEntry, this), this.reset(!0); } function values(iterable) { if (iterable) { var iteratorMethod = iterable[iteratorSymbol]; if (iteratorMethod) return iteratorMethod.call(iterable); if ("function" == typeof iterable.next) return iterable; if (!isNaN(iterable.length)) { var i = -1, next = function next() { for (; ++i < iterable.length;) if (hasOwn.call(iterable, i)) return next.value = iterable[i], next.done = !1, next; return next.value = undefined, next.done = !0, next; }; return next.next = next; } } return { next: doneResult }; } function doneResult() { return { value: undefined, done: !0 }; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, defineProperty(Gp, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), defineProperty(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, toStringTagSymbol, "GeneratorFunction"), exports.isGeneratorFunction = function (genFun) { var ctor = "function" == typeof genFun && genFun.constructor; return !!ctor && (ctor === GeneratorFunction || "GeneratorFunction" === (ctor.displayName || ctor.name)); }, exports.mark = function (genFun) { return Object.setPrototypeOf ? Object.setPrototypeOf(genFun, GeneratorFunctionPrototype) : (genFun.__proto__ = GeneratorFunctionPrototype, define(genFun, toStringTagSymbol, "GeneratorFunction")), genFun.prototype = Object.create(Gp), genFun; }, exports.awrap = function (arg) { return { __await: arg }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, asyncIteratorSymbol, function () { return this; }), exports.AsyncIterator = AsyncIterator, exports.async = function (innerFn, outerFn, self, tryLocsList, PromiseImpl) { void 0 === PromiseImpl && (PromiseImpl = Promise); var iter = new AsyncIterator(wrap(innerFn, outerFn, self, tryLocsList), PromiseImpl); return exports.isGeneratorFunction(outerFn) ? iter : iter.next().then(function (result) { return result.done ? result.value : iter.next(); }); }, defineIteratorMethods(Gp), define(Gp, toStringTagSymbol, "Generator"), define(Gp, iteratorSymbol, function () { return this; }), define(Gp, "toString", function () { return "[object Generator]"; }), exports.keys = function (val) { var object = Object(val), keys = []; for (var key in object) keys.push(key); return keys.reverse(), function next() { for (; keys.length;) { var key = keys.pop(); if (key in object) return next.value = key, next.done = !1, next; } return next.done = !0, next; }; }, exports.values = values, Context.prototype = { constructor: Context, reset: function reset(skipTempReset) { if (this.prev = 0, this.next = 0, this.sent = this._sent = undefined, this.done = !1, this.delegate = null, this.method = "next", this.arg = undefined, this.tryEntries.forEach(resetTryEntry), !skipTempReset) for (var name in this) "t" === name.charAt(0) && hasOwn.call(this, name) && !isNaN(+name.slice(1)) && (this[name] = undefined); }, stop: function stop() { this.done = !0; var rootRecord = this.tryEntries[0].completion; if ("throw" === rootRecord.type) throw rootRecord.arg; return this.rval; }, dispatchException: function dispatchException(exception) { if (this.done) throw exception; var context = this; function handle(loc, caught) { return record.type = "throw", record.arg = exception, context.next = loc, caught && (context.method = "next", context.arg = undefined), !!caught; } for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i], record = entry.completion; if ("root" === entry.tryLoc) return handle("end"); if (entry.tryLoc <= this.prev) { var hasCatch = hasOwn.call(entry, "catchLoc"), hasFinally = hasOwn.call(entry, "finallyLoc"); if (hasCatch && hasFinally) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } else if (hasCatch) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); } else { if (!hasFinally) throw new Error("try statement without catch or finally"); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } } } }, abrupt: function abrupt(type, arg) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc <= this.prev && hasOwn.call(entry, "finallyLoc") && this.prev < entry.finallyLoc) { var finallyEntry = entry; break; } } finallyEntry && ("break" === type || "continue" === type) && finallyEntry.tryLoc <= arg && arg <= finallyEntry.finallyLoc && (finallyEntry = null); var record = finallyEntry ? finallyEntry.completion : {}; return record.type = type, record.arg = arg, finallyEntry ? (this.method = "next", this.next = finallyEntry.finallyLoc, ContinueSentinel) : this.complete(record); }, complete: function complete(record, afterLoc) { if ("throw" === record.type) throw record.arg; return "break" === record.type || "continue" === record.type ? this.next = record.arg : "return" === record.type ? (this.rval = this.arg = record.arg, this.method = "return", this.next = "end") : "normal" === record.type && afterLoc && (this.next = afterLoc), ContinueSentinel; }, finish: function finish(finallyLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.finallyLoc === finallyLoc) return this.complete(entry.completion, entry.afterLoc), resetTryEntry(entry), ContinueSentinel; } }, "catch": function _catch(tryLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc === tryLoc) { var record = entry.completion; if ("throw" === record.type) { var thrown = record.arg; resetTryEntry(entry); } return thrown; } } throw new Error("illegal catch attempt"); }, delegateYield: function delegateYield(iterable, resultName, nextLoc) { return this.delegate = { iterator: values(iterable), resultName: resultName, nextLoc: nextLoc }, "next" === this.method && (this.arg = undefined), ContinueSentinel; } }, exports; }
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+function getProductDetail(_x) {
+  return _getProductDetail.apply(this, arguments);
+}
+function _getProductDetail() {
+  _getProductDetail = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(product) {
+    var response, responseXml;
+    return _regeneratorRuntime().wrap(function _callee$(_context) {
+      while (1) switch (_context.prev = _context.next) {
+        case 0:
+          _context.next = 2;
+          return fetch(product.url);
+        case 2:
+          response = _context.sent;
+          if (!response.ok) {
+            _context.next = 12;
+            break;
+          }
+          _context.t0 = new DOMParser();
+          _context.next = 7;
+          return response.text();
+        case 7:
+          _context.t1 = _context.sent;
+          responseXml = _context.t0.parseFromString.call(_context.t0, _context.t1, "text/html");
+          return _context.abrupt("return", getCurrentResult(responseXml));
+        case 12:
+          console.error(response);
+          return _context.abrupt("return", null);
+        case 14:
+        case "end":
+          return _context.stop();
+      }
+    }, _callee);
+  }));
+  return _getProductDetail.apply(this, arguments);
+}
+function getCurrency(currencySymbol) {
+  switch (currencySymbol) {
+    case "£":
+      return "GBP";
+    case "$":
+      return "USD";
+  }
+  return "";
+}
+function getCurrentResult() {
+  var dom = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : document;
+  // get the title and url of current page, if it is a product
+  var title = dom.getElementById("productTitle");
+  if (title == null) {
+    return null;
+  }
+  title = title.innerText;
+  var manufacturer = dom.getElementsByClassName("po-brand");
+  if (manufacturer.length) {
+    manufacturer = manufacturer[0].lastElementChild.innerText;
+  } else {
+    manufacturer = null;
+  }
+  var series = dom.getElementsByClassName("po-model_name");
+  if (series.length) {
+    series = series[0].lastElementChild.innerText;
+  } else {
+    series = null;
+  }
+  var itemWeight = dom.getElementsByClassName("po-item_weight");
+  var weight = null;
+  if (itemWeight.length) {
+    var weightStr = itemWeight[0].lastElementChild.innerText;
+    if (weightStr.endsWith(" grams")) {
+      weight = parseFloat(weightStr);
+    }
+  }
+  if (weight === null) {
+    var unitCount = dom.getElementsByClassName("po-unit_count");
+    if (unitCount.length) {
+      var _weightStr = unitCount[0].lastElementChild.innerText;
+      if (_weightStr.endsWith(" gram")) {
+        weight = parseFloat(_weightStr);
+      }
+    }
+  }
+  var originalPrice = dom.getElementsByClassName("a-text-price");
+  var price;
+  if (originalPrice.length && originalPrice[0].dataset.aStrike) {
+    price = originalPrice[0].innerText;
+  } else {
+    price = dom.getElementById("corePrice_feature_div");
+    if (price == null) {
+      return null;
+    }
+    price = dom.getElementById("corePrice_feature_div").getElementsByClassName("a-offscreen")[0].innerText;
+  }
+  var categoryNumber = document.getElementById("searchDropdownBox").dataset.navSelected;
+  var category = document.getElementById("searchDropdownBox").children[categoryNumber].innerText;
+  if (title === null) {
+    return null;
+  } else {
+    return {
+      title: dom.getElementById("productTitle").innerText,
+      manufacturer: manufacturer,
+      name: series ? series : title,
+      category: category,
+      series: series,
+      weight: weight,
+      url: window.location.href,
+      price: price.replaceAll(/^[0-9]/g, ""),
+      currency: getCurrency(price[0])
+    };
+  }
+}
+
+/**
+ * return output of parseCart
+ */
+function getCart() {
+  return _getCart.apply(this, arguments);
+}
+
+/**
+ * returns a list of {title, url, node}
+ * get the full details via [getInfo] compose [getProductDetail]
+ */
+function _getCart() {
+  _getCart = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2() {
+    var response, responseXml;
+    return _regeneratorRuntime().wrap(function _callee2$(_context2) {
+      while (1) switch (_context2.prev = _context2.next) {
+        case 0:
+          _context2.next = 2;
+          return fetch("https://www.amazon.co.uk/gp/cart/view.html");
+        case 2:
+          response = _context2.sent;
+          if (!response.ok) {
+            _context2.next = 12;
+            break;
+          }
+          _context2.t0 = new DOMParser();
+          _context2.next = 7;
+          return response.text();
+        case 7:
+          _context2.t1 = _context2.sent;
+          responseXml = _context2.t0.parseFromString.call(_context2.t0, _context2.t1, "text/html");
+          return _context2.abrupt("return", parseCart(responseXml));
+        case 12:
+          console.error(response);
+          return _context2.abrupt("return", null);
+        case 14:
+        case "end":
+          return _context2.stop();
+      }
+    }, _callee2);
+  }));
+  return _getCart.apply(this, arguments);
+}
+function parseCart() {
+  var dom = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : document;
+  var result = document.evaluate("//div[contains(concat(' ', normalize-space(@class), ' '), ' sc-list-body ')]/div[@data-itemid!='']", dom, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null);
+  var node = null;
+  var items = [];
+  while (node = result.iterateNext()) {
+    var title = node.getElementsByClassName("sc-list-item-content")[0].getElementsByTagName("a")[0];
+    items.push({
+      title: title.getElementsByClassName("a-truncate-full").innerText,
+      url: title.href,
+      node: node
+    });
+  }
+  return items || null;
+}
 
 /***/ })
 
@@ -34685,9 +34990,8 @@ throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-"use strict";
 /*!**************************!*\
   !*** ./src/ui/index.tsx ***!
   \**************************/

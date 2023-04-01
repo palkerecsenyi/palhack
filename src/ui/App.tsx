@@ -1,18 +1,21 @@
 import Container from "./elements/Container";
-import React, {useState} from "react";
+import React from "react";
 import Carbonabar from "./elements/Navbar"
 import CartTotal from "./components/CartTotal"
 import LoginPage from "./components/LoginPage"
+import { useAuth } from "./data/auth"
+import Leaderboard from "./components/Leaderboard"
 
 export default function App() {
-    const [loggedIn, setLoggedIn] = useState(false);
+    const [auth, setAuth] = useAuth()
     return <Container>
         <Carbonabar />
-        {loggedIn ? <>
+        {auth ? <>
             <CartTotal />
+            <Leaderboard />
         </> : <>
             <LoginPage
-                onChange={l => setLoggedIn(l)}
+                onChange={setAuth}
             />
         </>}
     </Container>
