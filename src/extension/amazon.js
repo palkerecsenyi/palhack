@@ -73,7 +73,7 @@ function getOrderConfirmationResults() {
 
 async function sendOrderConfirmationData(items) {
     let carbonTotal = 0
-    for (const item in items){
+    for (const item of items){
         const productDetails = getProductDetail(item)
         const carbonInfo = getInfo(productDetails)
         carbonTotal = carbonTotal + carbonInfo["Carbon"]
@@ -81,7 +81,7 @@ async function sendOrderConfirmationData(items) {
     const base = "http://localhost:30000/api/v1/saveToLeaderboard";
     const url = new URL(base);
     //###########################################
-    // user needs to be changed in the line of code below so its not hard coded
+    // user needs to be changed in the line of code below so it's not hard coded
     //###########################################
     url.searchParams.append("username", "user");
     url.searchParams.append("carbonForOrder", carbonTotal);
