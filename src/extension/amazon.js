@@ -71,8 +71,28 @@ function getOrderConfirmationResults() {
     }
 }
 
-function sendOrderConfirmationData(items) {
-    // TODO(lsheard)
+async function sendOrderConfirmationData(items) {
+    let carbonTotal = 0
+    for (const item in items){
+        const productDetails = getProductDetail(item)
+        const carbonInfo = getInfo(productDetails)
+        carbonTotal = carbonTotal + carbonInfo["Carbon"]
+    }
+    const base = "http://localhost:30000/api/v1/saveToLeaderboard";
+    const url = new URL(base);
+    //###########################################
+    // user needs to be changed in the line of code below so its not hard coded
+    //###########################################
+    url.searchParams.append("username", "user");
+    url.searchParams.append("carbonForOrder", carbonTotal);
+    const response = await fetch(url);
+    if (response.ok) {
+        return true;
+    } else {
+        console.error(response)
+        return null;
+    }
+
 }
 
 export default async function Amazon() {
