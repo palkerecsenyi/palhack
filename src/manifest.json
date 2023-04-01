@@ -12,7 +12,7 @@
 
   "content_scripts": [
     {
-      "matches": ["*://amazon.com/*", "*://amazon.co.uk/*"],
+      "matches": ["*://www.amazon.com/*", "*://www.amazon.co.uk/*"],
       "js": ["amazon.js"]
     }
   ]
