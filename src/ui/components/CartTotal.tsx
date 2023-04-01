@@ -1,10 +1,20 @@
-import React, { useMemo } from "react"
+import React, { useEffect, useMemo, useState } from "react"
 import styles from "../styles/cartTotal.module.scss"
+import { getCartEmissions } from "../data/cart"
 
 export default function CartTotal() {
     const co2Total = useMemo(() => {
         return 15
     }, [])
+
+    const [cartItems, setCartItems] = useState([])
+    useEffect(() => {
+        (async () => {
+            await getCartEmissions()
+            setCartItems([])
+        })()
+    }, [])
+
     return <div className={styles.cartTotal}>
         <p className={styles.totalString}>
             <span className={styles.bigNumber}>{co2Total}</span>

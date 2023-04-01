@@ -12,8 +12,18 @@ export async function getProductDetail(product) {
 export function getCurrentResult(dom = document) {
     // get the title and url of current page, if it is a product
     const title = dom.getElementById("productTitle");
-    const manufacturer = dom.getElementsByClassName("po-brand")[0].lastElementChild.innerText;
-    const series = dom.getElementsByClassName("po-model_name")[0].lastElementChild.innerText;
+    let manufacturer = dom.getElementsByClassName("po-brand");
+    if (manufacturer.length) {
+        manufacturer = manufacturer[0].lastElementChild.innerText;
+    } else {
+        manufacturer = null;
+    }
+    let series = dom.getElementsByClassName("po-model_name");
+    if (series.length) {
+        series = series[0].lastElementChild.innerText;
+    } else {
+        series = null;
+    }
     const itemWeight = dom.getElementsByClassName("po-item_weight")
     let weight = null;
     if (itemWeight.length) {
@@ -32,17 +42,35 @@ export function getCurrentResult(dom = document) {
         }
     }
     const originalPrice = dom.getElementsByClassName("a-text-price");
-    const price = originalPrice.length ? originalPrice[0].innerText : dom.getElementById("corePrice_feature_div").getElementsByClassName("a-offscreen")[0].innerText;
-    const categoryNumber = document.getElementById("searchDropdownBox").dataset["nav-selected"]
+    const price = (originalPrice.length && originalPrice[0].dataset.aStrike) ? originalPrice[0].innerText : dom.getElementById("corePrice_feature_div").getElementsByClassName("a-offscreen")[0].innerText;
+    const categoryNumber = document.getElementById("searchDropdownBox").dataset.navSelected;
     const category = document.getElementById("searchDropdownBox").children[categoryNumber].innerText
     if (title === null) {
         return null;
     } else {
-        return { title: dom.getElementById("productTitle"), manufacturer: manufacturer, name: series ? series : title, category: category, series: series, weight: weight, url: window.location.href, price: price.replace(/^[0-9]/, "") };
+        return { title: dom.getElementById("productTitle"), manufacturer: manufacturer, name: series ? series : title, category: category, series: series, weight: weight, url: window.location.href, price: price.replace(/^[0-9]/g, "") };
     }
 }
 
-export function getCart(dom = document) {
+/**
+ * return output of parseCart
+ */
+export async function getCart() {
+    const response = await fetch("https://www.amazon.co.uk/gp/cart/view.html");
+    if (response.ok) {
+        const responseXml = DOMParser.parseFromString(await response.text(), "text/html");
+        return parseCart(responseXml);
+    } else {
+        console.error(response)
+        return null;
+    }
+}
+
+/**
+ * returns a list of {title, url, node}
+ * get the full details via [getInfo] compose [getProductDetail]
+ */
+export function parseCart(dom = document) {
     const result = document.evaluate("//div[contains(concat(' ', normalize-space(@class), ' '), ' sc-list-body ')]/div[@data-itemid!='']", dom, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null);
     let node = null;
     const items = [];

@@ -1,5 +1,4 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/ui/styles/cartTotal.module.scss":
@@ -8,6 +7,7 @@
   \**************************************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -21,7 +21,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".mygYI30JoV95Bf7PZldk {\n  margin: 20px 10px;\n  border: 1px solid #e2e2e2;\n  border-radius: 15px;\n  padding: 10px 20px;\n  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);\n}\n.mygYI30JoV95Bf7PZldk .wYqh_3nU2YTaZ0VVhksB {\n  text-align: center;\n  vertical-align: middle;\n}\n.mygYI30JoV95Bf7PZldk .wYqh_3nU2YTaZ0VVhksB .p5douUbp3EyU_BgtPQB4 {\n  margin-right: 5px;\n  display: inline-block;\n}\n\n.p5douUbp3EyU_BgtPQB4 {\n  font-size: 2rem;\n}", "",{"version":3,"sources":["webpack://./src/ui/styles/cartTotal.module.scss"],"names":[],"mappings":"AAAA;EACE,iBAAA;EAEA,yBAAA;EACA,mBAAA;EAEA,kBAAA;EACA,6EAAA;AADF;AAGE;EACE,kBAAA;EACA,sBAAA;AADJ;AAGI;EACE,iBAAA;EACA,qBAAA;AADN;;AAMA;EACE,eAAA;AAHF","sourcesContent":[".cartTotal {\r\n  margin: 20px 10px;\r\n\r\n  border: 1px solid #e2e2e2;\r\n  border-radius: 15px;\r\n\r\n  padding: 10px 20px;\r\n  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);\r\n\r\n  .totalString {\r\n    text-align: center;\r\n    vertical-align: middle;\r\n\r\n    .bigNumber {\r\n      margin-right: 5px;\r\n      display: inline-block;\r\n    }\r\n  }\r\n}\r\n\r\n.bigNumber {\r\n  font-size: 2rem;\r\n}\r\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".mygYI30JoV95Bf7PZldk {\n  margin: 20px 10px;\n  border: 1px solid #e2e2e2;\n  border-radius: 15px;\n  padding: 10px 20px;\n  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);\n}\n.mygYI30JoV95Bf7PZldk .wYqh_3nU2YTaZ0VVhksB {\n  text-align: center;\n  vertical-align: middle;\n}\n.mygYI30JoV95Bf7PZldk .wYqh_3nU2YTaZ0VVhksB .p5douUbp3EyU_BgtPQB4 {\n  margin-right: 5px;\n  display: inline-block;\n}\n\n.p5douUbp3EyU_BgtPQB4 {\n  font-size: 2rem;\n}", "",{"version":3,"sources":["webpack://./src/ui/styles/cartTotal.module.scss"],"names":[],"mappings":"AAAA;EACE,iBAAA;EAEA,yBAAA;EACA,mBAAA;EAEA,kBAAA;EACA,6EAAA;AADF;AAGE;EACE,kBAAA;EACA,sBAAA;AADJ;AAGI;EACE,iBAAA;EACA,qBAAA;AADN;;AAMA;EACE,eAAA;AAHF","sourcesContent":[".cartTotal {\n  margin: 20px 10px;\n\n  border: 1px solid #e2e2e2;\n  border-radius: 15px;\n\n  padding: 10px 20px;\n  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);\n\n  .totalString {\n    text-align: center;\n    vertical-align: middle;\n\n    .bigNumber {\n      margin-right: 5px;\n      display: inline-block;\n    }\n  }\n}\n\n.bigNumber {\n  font-size: 2rem;\n}\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"cartTotal": "mygYI30JoV95Bf7PZldk",
@@ -39,6 +39,7 @@ ___CSS_LOADER_EXPORT___.locals = {
   \**************************************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -52,7 +53,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".USCKx4tarLo5nqI2bEub {\n  height: 500px;\n  width: 400px;\n}", "",{"version":3,"sources":["webpack://./src/ui/styles/container.module.scss"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,YAAA;AACF","sourcesContent":[".parentContainer {\r\n  height: 500px;\r\n  width: 400px;\r\n}\r\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".USCKx4tarLo5nqI2bEub {\n  height: 500px;\n  width: 400px;\n}", "",{"version":3,"sources":["webpack://./src/ui/styles/container.module.scss"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,YAAA;AACF","sourcesContent":[".parentContainer {\n  height: 500px;\n  width: 400px;\n}\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"parentContainer": "USCKx4tarLo5nqI2bEub"
@@ -68,6 +69,7 @@ ___CSS_LOADER_EXPORT___.locals = {
   \***********************************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -81,7 +83,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".X07OAx0vpXLGTSjE2szE {\n  font-family: Abel, sans-serif;\n  font-size: 1.5rem;\n  width: 100%;\n}\n\n.oUHXv8G5vkpY1jHWKL_A, .X07OAx0vpXLGTSjE2szE {\n  display: block;\n}\n\n.oUHXv8G5vkpY1jHWKL_A {\n  margin-top: 10px;\n}\n\n.vhfg_gMcCyyRZSpIiGJ2 {\n  padding: 10px 20px;\n}\n\n.wqubDayNlHoDW6yGoTli {\n  background-color: #37c884;\n  border: none;\n  color: white;\n  padding: 10px 10px;\n  text-align: center;\n  text-decoration: none;\n  font-size: 1rem;\n  margin-top: 10px;\n  border-radius: 10px;\n}\n.wqubDayNlHoDW6yGoTli:hover {\n  cursor: pointer;\n  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);\n}", "",{"version":3,"sources":["webpack://./src/ui/styles/inputs.module.scss","webpack://./src/ui/styles/vars.scss"],"names":[],"mappings":"AAEA;EACE,6BCDY;EDEZ,iBAAA;EACA,WAAA;AADF;;AAIA;EACE,cAAA;AADF;;AAIA;EACE,gBAAA;AADF;;AAIA;EACE,kBAAA;AADF;;AAIA;EACE,yBCrBc;EDsBd,YAAA;EACA,YAAA;EACA,kBAAA;EACA,kBAAA;EACA,qBAAA;EACA,eAAA;EACA,gBAAA;EACA,mBAAA;AADF;AAEE;EACE,eAAA;EACA,6EAAA;AAAJ","sourcesContent":["@import \"vars\";\r\n\r\n.input {\r\n  font-family: $font-family;\r\n  font-size: 1.5rem;\r\n  width: 100%;\r\n}\r\n\r\n.credentials, .input {\r\n  display: block;\r\n}\r\n\r\n.credentials {\r\n  margin-top: 10px;\r\n}\r\n\r\n.form {\r\n  padding: 10px 20px;\r\n}\r\n\r\n.button {\r\n  background-color: $primary-color;\r\n  border: none;\r\n  color: white;\r\n  padding: 10px 10px;\r\n  text-align: center;\r\n  text-decoration: none;\r\n  font-size: 1rem;\r\n  margin-top: 10px;\r\n  border-radius: 10px;\r\n  &:hover {\r\n    cursor: pointer;\r\n    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);\r\n  }\r\n}\r\n","$primary-color: #37c884;\r\n$duck-color: #edc812;\r\n$font-family: Abel, sans-serif;\r\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".X07OAx0vpXLGTSjE2szE {\n  font-family: Abel, sans-serif;\n  font-size: 1.5rem;\n  width: 100%;\n}\n\n.oUHXv8G5vkpY1jHWKL_A, .X07OAx0vpXLGTSjE2szE {\n  display: block;\n}\n\n.oUHXv8G5vkpY1jHWKL_A {\n  margin-top: 10px;\n}\n\n.vhfg_gMcCyyRZSpIiGJ2 {\n  padding: 10px 20px;\n}\n\n.wqubDayNlHoDW6yGoTli {\n  background-color: #37c884;\n  border: none;\n  color: white;\n  padding: 10px 10px;\n  text-align: center;\n  text-decoration: none;\n  font-size: 1rem;\n  margin-top: 10px;\n  border-radius: 10px;\n}\n.wqubDayNlHoDW6yGoTli:hover {\n  cursor: pointer;\n  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);\n}", "",{"version":3,"sources":["webpack://./src/ui/styles/inputs.module.scss","webpack://./src/ui/styles/vars.scss"],"names":[],"mappings":"AAEA;EACE,6BCDY;EDEZ,iBAAA;EACA,WAAA;AADF;;AAIA;EACE,cAAA;AADF;;AAIA;EACE,gBAAA;AADF;;AAIA;EACE,kBAAA;AADF;;AAIA;EACE,yBCrBc;EDsBd,YAAA;EACA,YAAA;EACA,kBAAA;EACA,kBAAA;EACA,qBAAA;EACA,eAAA;EACA,gBAAA;EACA,mBAAA;AADF;AAEE;EACE,eAAA;EACA,6EAAA;AAAJ","sourcesContent":["@import \"vars\";\n\n.input {\n  font-family: $font-family;\n  font-size: 1.5rem;\n  width: 100%;\n}\n\n.credentials, .input {\n  display: block;\n}\n\n.credentials {\n  margin-top: 10px;\n}\n\n.form {\n  padding: 10px 20px;\n}\n\n.button {\n  background-color: $primary-color;\n  border: none;\n  color: white;\n  padding: 10px 10px;\n  text-align: center;\n  text-decoration: none;\n  font-size: 1rem;\n  margin-top: 10px;\n  border-radius: 10px;\n  &:hover {\n    cursor: pointer;\n    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);\n  }\n}\n","$primary-color: #37c884;\n$duck-color: #edc812;\n$font-family: Abel, sans-serif;\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"input": "X07OAx0vpXLGTSjE2szE",
@@ -100,6 +102,7 @@ ___CSS_LOADER_EXPORT___.locals = {
   \**************************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -114,7 +117,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Abel&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "h1, h2, h3, h4, h5, h6, p {\n  margin: 0;\n}\nh1, h1 button, h1 label, h2, h2 button, h2 label, h3, h3 button, h3 label, h4, h4 button, h4 label, h5, h5 button, h5 label, h6, h6 button, h6 label, p, p button, p label {\n  font-family: Abel, sans-serif;\n}", "",{"version":3,"sources":["webpack://./src/ui/styles/main.scss","webpack://./src/ui/styles/vars.scss"],"names":[],"mappings":"AAGA;EACE,SAAA;AADF;AAGE;EACE,6BCLU;ADId","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');\r\n@import \"vars\";\r\n\r\nh1, h2, h3, h4, h5, h6, p {\r\n  margin: 0;\r\n\r\n  &, button, label {\r\n    font-family: $font-family;\r\n  }\r\n}\r\n","$primary-color: #37c884;\r\n$duck-color: #edc812;\r\n$font-family: Abel, sans-serif;\r\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "h1, h2, h3, h4, h5, h6, p {\n  margin: 0;\n}\nh1, h1 button, h1 label, h2, h2 button, h2 label, h3, h3 button, h3 label, h4, h4 button, h4 label, h5, h5 button, h5 label, h6, h6 button, h6 label, p, p button, p label {\n  font-family: Abel, sans-serif;\n}", "",{"version":3,"sources":["webpack://./src/ui/styles/main.scss","webpack://./src/ui/styles/vars.scss"],"names":[],"mappings":"AAGA;EACE,SAAA;AADF;AAGE;EACE,6BCLU;ADId","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');\n@import \"vars\";\n\nh1, h2, h3, h4, h5, h6, p {\n  margin: 0;\n\n  &, button, label {\n    font-family: $font-family;\n  }\n}\n","$primary-color: #37c884;\n$duck-color: #edc812;\n$font-family: Abel, sans-serif;\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -127,6 +130,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, "h1, h2, h3, h4, h5, h6, p {\n  margin:
   \***********************************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -140,7 +144,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".gfBJ8Hwolvs9lsmTbZL2 {\n  width: 100%;\n  height: 80px;\n  background-color: #37c884;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n.gfBJ8Hwolvs9lsmTbZL2 img {\n  height: 120px;\n}", "",{"version":3,"sources":["webpack://./src/ui/styles/navbar.module.scss","webpack://./src/ui/styles/vars.scss"],"names":[],"mappings":"AAEA;EACE,WAAA;EACA,YAAA;EACA,yBCLc;EDMd,aAAA;EACA,uBAAA;EACA,mBAAA;AADF;AAGE;EACE,aAAA;AADJ","sourcesContent":["@import \"vars\";\r\n\r\n.navbar {\r\n  width: 100%;\r\n  height: 80px;\r\n  background-color: $primary-color;\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n\r\n  img {\r\n    height: 120px;\r\n  }\r\n}\r\n","$primary-color: #37c884;\r\n$duck-color: #edc812;\r\n$font-family: Abel, sans-serif;\r\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".gfBJ8Hwolvs9lsmTbZL2 {\n  width: 100%;\n  height: 80px;\n  background-color: #37c884;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n.gfBJ8Hwolvs9lsmTbZL2 img {\n  height: 120px;\n}", "",{"version":3,"sources":["webpack://./src/ui/styles/navbar.module.scss","webpack://./src/ui/styles/vars.scss"],"names":[],"mappings":"AAEA;EACE,WAAA;EACA,YAAA;EACA,yBCLc;EDMd,aAAA;EACA,uBAAA;EACA,mBAAA;AADF;AAGE;EACE,aAAA;AADJ","sourcesContent":["@import \"vars\";\n\n.navbar {\n  width: 100%;\n  height: 80px;\n  background-color: $primary-color;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n\n  img {\n    height: 120px;\n  }\n}\n","$primary-color: #37c884;\n$duck-color: #edc812;\n$font-family: Abel, sans-serif;\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"navbar": "gfBJ8Hwolvs9lsmTbZL2"
@@ -156,6 +160,7 @@ ___CSS_LOADER_EXPORT___.locals = {
   \*****************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 /*
@@ -250,6 +255,7 @@ module.exports = function (cssWithMappingToString) {
   \************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 module.exports = function (item) {
@@ -275,6 +281,7 @@ module.exports = function (item) {
   \*************************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
+"use strict";
 /**
  * @license React
  * react-dom.development.js
@@ -30148,6 +30155,7 @@ if (
   \******************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
+"use strict";
 
 
 var m = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
@@ -30180,6 +30188,7 @@ if (false) {} else {
   \*****************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 
 
 function checkDCE() {
@@ -30223,6 +30232,7 @@ if (false) {} else {
   \*****************************************************/
 /***/ ((module, exports, __webpack_require__) => {
 
+"use strict";
 /* module decorator */ module = __webpack_require__.nmd(module);
 /**
  * @license React
@@ -32973,6 +32983,7 @@ if (
   \*************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 
 
 if (false) {} else {
@@ -32988,6 +32999,7 @@ if (false) {} else {
   \*************************************************************/
 /***/ ((__unused_webpack_module, exports) => {
 
+"use strict";
 /**
  * @license React
  * scheduler.development.js
@@ -33632,6 +33644,7 @@ if (
   \*****************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 
 
 if (false) {} else {
@@ -33647,6 +33660,7 @@ if (false) {} else {
   \*********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -33701,6 +33715,7 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
   \*********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -33755,6 +33770,7 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
   \******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -33809,6 +33825,7 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
   \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -33863,6 +33880,7 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
   \******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -33917,6 +33935,7 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
   \****************************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 var stylesInDOM = [];
@@ -34010,6 +34029,7 @@ module.exports = function (list, options) {
   \********************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 var memo = {};
@@ -34053,6 +34073,7 @@ module.exports = insertBySelector;
   \**********************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -34072,6 +34093,7 @@ module.exports = insertStyleElement;
   \**********************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -34091,6 +34113,7 @@ module.exports = setAttributesWithoutAttributes;
   \***************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -34161,6 +34184,7 @@ module.exports = domAPI;
   \*********************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -34184,6 +34208,7 @@ module.exports = styleTagTransform;
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ App)
@@ -34217,6 +34242,7 @@ function App() {
   \*****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ CartTotal)
@@ -34224,11 +34250,64 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _styles_cartTotal_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/cartTotal.module.scss */ "./src/ui/styles/cartTotal.module.scss");
+/* harmony import */ var _data_cart__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../data/cart */ "./src/ui/data/cart.ts");
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (undefined && undefined.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (g && (g = 0, op[0] && (_ = 0)), _) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+
 
 
 function CartTotal() {
+    var _this = this;
     var co2Total = (0,react__WEBPACK_IMPORTED_MODULE_0__.useMemo)(function () {
         return 15;
+    }, []);
+    var _a = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]), cartItems = _a[0], setCartItems = _a[1];
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+        (function () { return __awaiter(_this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, (0,_data_cart__WEBPACK_IMPORTED_MODULE_2__.getCartEmissions)()];
+                    case 1:
+                        _a.sent();
+                        setCartItems([]);
+                        return [2 /*return*/];
+                }
+            });
+        }); })();
     }, []);
     return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _styles_cartTotal_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].cartTotal },
         react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", { className: _styles_cartTotal_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].totalString },
@@ -34247,6 +34326,7 @@ function CartTotal() {
   \*****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ LoginPage)
@@ -34351,12 +34431,78 @@ function LoginPage(_a) {
 
 /***/ }),
 
+/***/ "./src/ui/data/cart.ts":
+/*!*****************************!*\
+  !*** ./src/ui/data/cart.ts ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "getCartEmissions": () => (/* binding */ getCartEmissions)
+/* harmony export */ });
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../utils */ "./src/utils.js");
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (undefined && undefined.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (g && (g = 0, op[0] && (_ = 0)), _) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+
+var getCartEmissions = function () { return __awaiter(void 0, void 0, void 0, function () {
+    var cartItems;
+    return __generator(this, function (_a) {
+        switch (_a.label) {
+            case 0: return [4 /*yield*/, (0,_utils__WEBPACK_IMPORTED_MODULE_0__.getCart)()];
+            case 1:
+                cartItems = _a.sent();
+                console.log(cartItems);
+                return [2 /*return*/];
+        }
+    });
+}); };
+
+
+/***/ }),
+
 /***/ "./src/ui/elements/Container.tsx":
 /*!***************************************!*\
   !*** ./src/ui/elements/Container.tsx ***!
   \***************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ Container)
@@ -34380,6 +34526,7 @@ function Container(_a) {
   \************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ Carbonabar)
@@ -34405,7 +34552,18 @@ function Carbonabar() {
   \*************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "cea02f7e76c246cb59c4.svg";
+"use strict";
+module.exports = __webpack_require__.p + "8b9cf48aec60a4935e9e.svg";
+
+/***/ }),
+
+/***/ "./src/utils.js":
+/*!**********************!*\
+  !*** ./src/utils.js ***!
+  \**********************/
+/***/ (() => {
+
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /home/palk/Documents/Projects/Uni/hack23/palhack/src/utils.js: Unexpected token, expected \")\" (46:4)\n\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m originalPrice \u001b[33m=\u001b[39m dom\u001b[33m.\u001b[39mgetElementsByClassName(\u001b[32m\"a-text-price\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (originalPrice\u001b[33m.\u001b[39mlength \u001b[33m&&\u001b[39m originalPrice[\u001b[35m0\u001b[39m]\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     \u001b[36mconst\u001b[39m price \u001b[33m=\u001b[39m originalPrice\u001b[33m.\u001b[39mlength \u001b[33m?\u001b[39m originalPrice[\u001b[35m0\u001b[39m]\u001b[33m.\u001b[39minnerText \u001b[33m:\u001b[39m dom\u001b[33m.\u001b[39mgetElementById(\u001b[32m\"corePrice_feature_div\"\u001b[39m)\u001b[33m.\u001b[39mgetElementsByClassName(\u001b[32m\"a-offscreen\"\u001b[39m)[\u001b[35m0\u001b[39m]\u001b[33m.\u001b[39minnerText\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m categoryNumber \u001b[33m=\u001b[39m document\u001b[33m.\u001b[39mgetElementById(\u001b[32m\"searchDropdownBox\"\u001b[39m)\u001b[33m.\u001b[39mdataset\u001b[33m.\u001b[39mnavSelected\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m     \u001b[36mconst\u001b[39m category \u001b[33m=\u001b[39m document\u001b[33m.\u001b[39mgetElementById(\u001b[32m\"searchDropdownBox\"\u001b[39m)\u001b[33m.\u001b[39mchildren[categoryNumber]\u001b[33m.\u001b[39minnerText\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m     \u001b[36mif\u001b[39m (title \u001b[33m===\u001b[39m \u001b[36mnull\u001b[39m) {\u001b[0m\n    at instantiate (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parse-error/credentials.ts:62:21)\n    at toParseError (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parse-error.ts:60:12)\n    at JSXParserMixin.raise (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/tokenizer/index.ts:1490:19)\n    at JSXParserMixin.unexpected (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/tokenizer/index.ts:1531:16)\n    at JSXParserMixin.expect (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/util.ts:145:28)\n    at JSXParserMixin.parseHeaderExpression (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:855:10)\n    at JSXParserMixin.parseIfStatement (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:1008:22)\n    at JSXParserMixin.parseStatementContent (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:476:21)\n    at JSXParserMixin.parseStatementLike (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:417:17)\n    at JSXParserMixin.parseStatementListItem (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:366:17)\n    at JSXParserMixin.parseBlockOrModuleBlockBody (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:1360:16)\n    at JSXParserMixin.parseBlockBody (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:1333:10)\n    at JSXParserMixin.parseBlock (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:1301:10)\n    at JSXParserMixin.parseFunctionBody (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/expression.ts:2552:24)\n    at JSXParserMixin.parseFunctionBodyAndFinish (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/expression.ts:2523:10)\n    at callback (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:1605:12)\n    at JSXParserMixin.withSmartMixTopicForbiddingContext (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/expression.ts:3051:14)\n    at JSXParserMixin.parseFunction (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:1603:10)\n    at JSXParserMixin.parseFunctionStatement (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:997:17)\n    at JSXParserMixin.parseStatementContent (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:460:21)\n    at JSXParserMixin.parseStatementLike (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:417:17)\n    at JSXParserMixin.parseStatementListItem (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:366:17)\n    at JSXParserMixin.parseExportDeclaration (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:2539:17)\n    at JSXParserMixin.maybeParseExportDeclaration (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:2458:31)\n    at JSXParserMixin.parseExport (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:2361:29)\n    at JSXParserMixin.parseStatementContent (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:580:25)\n    at JSXParserMixin.parseStatementLike (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:417:17)\n    at JSXParserMixin.parseModuleItem (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:354:17)\n    at JSXParserMixin.parseBlockOrModuleBlockBody (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:1359:16)\n    at JSXParserMixin.parseBlockBody (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:1333:10)\n    at JSXParserMixin.parseProgram (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:226:10)\n    at JSXParserMixin.parseTopLevel (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/statement.ts:208:25)\n    at JSXParserMixin.parse (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/parser/index.ts:45:10)\n    at parse (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/parser/src/index.ts:67:38)\n    at parser (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/core/src/parser/index.ts:28:19)\n    at parser.next (<anonymous>)\n    at normalizeFile (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/core/src/transformation/normalize-file.ts:51:24)\n    at normalizeFile.next (<anonymous>)\n    at run (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/core/src/transformation/index.ts:38:36)\n    at run.next (<anonymous>)\n    at transform (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/@babel/core/src/transform.ts:29:20)\n    at transform.next (<anonymous>)\n    at step (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/gensync/index.js:261:32)\n    at /home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/gensync/index.js:273:13\n    at async.call.result.err.err (/home/palk/Documents/Projects/Uni/hack23/palhack/node_modules/gensync/index.js:223:11)");
 
 /***/ })
 
@@ -34527,8 +34685,9 @@ module.exports = __webpack_require__.p + "cea02f7e76c246cb59c4.svg";
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
 (() => {
+"use strict";
 /*!**************************!*\
   !*** ./src/ui/index.tsx ***!
   \**************************/
