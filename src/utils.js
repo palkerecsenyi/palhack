@@ -1,6 +1,3 @@
-// TODO
-
-
 export async function getProductDetail(product) {
     const response = await fetch(product.url);
     if (response.ok) {
@@ -36,11 +33,12 @@ export function getCurrentResult(dom = document) {
     }
     const originalPrice = dom.getElementsByClassName("a-text-price");
     const price = originalPrice.length ? originalPrice[0].innerText : dom.getElementById("corePrice_feature_div").getElementsByClassName("a-offscreen")[0].innerText;
-
+    const categoryNumber = document.getElementById("searchDropdownBox").dataset["nav-selected"]
+    const category = document.getElementById("searchDropdownBox").children[categoryNumber].innerText
     if (title === null) {
         return null;
     } else {
-        return { title: dom.getElementById("productTitle"), manufacturer: manufacturer, series: series, weight: weight, url: window.location.href, price: price.replace(/^[0-9]/, "") };
+        return { title: dom.getElementById("productTitle"), manufacturer: manufacturer, name: series ? series : title, category: category, series: series, weight: weight, url: window.location.href, price: price.replace(/^[0-9]/, "") };
     }
 }
 

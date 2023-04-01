@@ -1,11 +1,11 @@
 import {getProductDetail, getCurrentResult} from '../utils.js';
 
-async function getInfo(name, manufacturer, categoryName) {
+async function getInfo(product) {
     const base = "http://localhost:78393/api/v1/getCarbon";
-    const url = URL(base);
-    url.searchParams.append("name", name);
-    url.searchParams.append("manufacturer", manufacturer);
-    url.searchParams.append("categoryName", categoryName);
+    const url = new URL(base);
+    url.searchParams.append("name", product.name);
+    url.searchParams.append("manufacturer", product.manufacturer);
+    url.searchParams.append("categoryName", product.categoryName);
     const response = await fetch(url);
     if (response.ok) {
         return await response.json()
@@ -38,8 +38,8 @@ async function showCarbonForSearch(results) {
     }
 }
 
-function showCarbonForProduct(result) {
-    const info = getInfo(result.title, result.manufacturer, result.categoryName)
+function showCarbonForProduct(product) {
+    const info = getInfo(product.title, product.manufacturer, product.categoryName)
     const button = document.createElement("div");
     button.setAttribute("style", "border: 1px #37c884; color: ")
     button.setAttribute("content", info.carbon + "kg of carbon");
@@ -70,9 +70,9 @@ function sendOrderConfirmationData(items) {
 
 export default async function Amazon() {
     // entrypoint
-    console.log(getSearchResults())
-    if (getSearchResults() !== null) {
-        showCarbonForProduct()
+    const thisProduct = getSearchResults();
+    if (thisProduct !== null) {
+        showCarbonForProduct(thisProduct)
     }
     const results = getSearchResults();
     if (results !== null) {

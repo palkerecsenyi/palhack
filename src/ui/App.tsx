@@ -5,7 +5,7 @@ import CartTotal from "./components/CartTotal"
 import LoginPage from "./components/LoginPage"
 
 export default function App() {
-    const loggedIn =false
+    const loggedIn = false
     return <Container>
         <Carbonabar />
         {loggedIn ? <>
