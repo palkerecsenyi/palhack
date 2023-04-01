@@ -11,6 +11,8 @@ async function getInfo(product) {
     url.searchParams.append("name", product.name);
     url.searchParams.append("manufacturer", product.manufacturer);
     url.searchParams.append("categoryName", product.category);
+    url.searchParams.append("priceCents", product.price ? product.price : "");
+    url.searchParams.append("priceCurrency", product.currency ? product.currency : "")
     // TODO pass weight, series, etc
     console.log(url);
     console.log(product);

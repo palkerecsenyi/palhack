@@ -9,6 +9,16 @@ export async function getProductDetail(product) {
     }
 }
 
+function getCurrency(currencySymbol) {
+    switch(currencySymbol) {
+        case "£":
+            return "GBP"
+        case "$":
+            return "USD"
+    }
+    return ""
+}
+
 export function getCurrentResult(dom = document) {
     // get the title and url of current page, if it is a product
     let title = dom.getElementById("productTitle");
@@ -61,7 +71,7 @@ export function getCurrentResult(dom = document) {
     if (title === null) {
         return null;
     } else {
-        return { title: dom.getElementById("productTitle").innerText, manufacturer: manufacturer, name: series ? series : title, category: category, series: series, weight: weight, url: window.location.href, price: price.replace(/^[0-9]/g, "") };
+        return { title: dom.getElementById("productTitle").innerText, manufacturer: manufacturer, name: series ? series : title, category: category, series: series, weight: weight, url: window.location.href, price: price.replaceAll(/^[0-9]/, ""), currency: getCurrency(price[0]) };
     }
 }
 
@@ -71,7 +81,7 @@ export function getCurrentResult(dom = document) {
 export async function getCart() {
     const response = await fetch("https://www.amazon.co.uk/gp/cart/view.html");
     if (response.ok) {
-        const responseXml = DOMParser.parseFromString(await response.text(), "text/html");
+        const responseXml = new DOMParser().parseFromString(await response.text(), "text/html");
         return parseCart(responseXml);
     } else {
         console.error(response)
