@@ -11,7 +11,10 @@ export async function getProductDetail(product) {
 
 export function getCurrentResult(dom = document) {
     // get the title and url of current page, if it is a product
-    const title = dom.getElementById("productTitle").innerText;
+    let title = dom.getElementById("productTitle");
+    if (title != null) {
+        title = title.innerText
+    }
     let manufacturer = dom.getElementsByClassName("po-brand");
     if (manufacturer.length) {
         manufacturer = manufacturer[0].lastElementChild.innerText;
