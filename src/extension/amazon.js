@@ -77,7 +77,7 @@ function sendOrderConfirmationData(items) {
 
 export default async function Amazon() {
     // entrypoint
-    const thisProduct = getSearchResults();
+    const thisProduct = getCurrentResult();
     if (thisProduct !== null) {
         showCarbonForProduct(thisProduct)
     }
