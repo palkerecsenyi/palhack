@@ -74,6 +74,10 @@ export default async function Amazon() {
     if (getSearchResults() !== null) {
         showCarbonForProduct()
     }
+    const results = getSearchResults();
+    if (results !== null) {
+        await showCarbonForSearch(results)
+    }
     console.log(getCurrentResult())
     console.log(getOrderConfirmationResults())
 }

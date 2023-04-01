@@ -1,0 +1,36 @@
+@import "vars";
+
+.input {
+  font-family: $font-family;
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.credentials, .input {
+  display: block;
+}
+
+.credentials {
+  margin-top: 10px;
+}
+
+.form{
+  padding: 10px 20px;
+}
+
+.button {
+  background-color: $primary-color;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-top: 10px;
+  border-radius: 10px;
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  }
+}
+
