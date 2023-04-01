@@ -1,4 +1,5 @@
 import React, { FormEvent, useCallback, useState } from "react"
+import styles from "../styles/inputs.module.scss"
 
 export default function LoginPage() {
     const [username, setUsername] = useState('');
@@ -10,26 +11,29 @@ export default function LoginPage() {
 
     return <div>
         <form onSubmit={handleSubmit}>
-            <label>
+            <label className={styles.credentials}>
                 Username:
                 <input
                     type="text"
                     required
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
+                    className={styles.input}
                 />
             </label>
-            <label>
+            <label className={styles.credentials}>
                 Password:
                 <input
-                    type="text"
+                    type="password"
                     required
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
+                    className={styles.input}
                 />
             </label>
             <p>{ username }</p>
             <p>{ password }</p>
+            <button type="submit">Log in</button>
         </form>
     </div>
 }
