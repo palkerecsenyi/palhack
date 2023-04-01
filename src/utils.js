@@ -1,7 +1,7 @@
 export async function getProductDetail(product) {
     const response = await fetch(product.url);
     if (response.ok) {
-        const responseXml = DOMParser.parseFromString(await response.text(), "text/html");
+        const responseXml = new DOMParser().parseFromString(await response.text(), "text/html");
         return getCurrentResult(responseXml);
     } else {
         console.error(response)
@@ -11,7 +11,7 @@ export async function getProductDetail(product) {
 
 export function getCurrentResult(dom = document) {
     // get the title and url of current page, if it is a product
-    const title = dom.getElementById("productTitle");
+    const title = dom.getElementById("productTitle").innerText;
     let manufacturer = dom.getElementsByClassName("po-brand");
     if (manufacturer.length) {
         manufacturer = manufacturer[0].lastElementChild.innerText;
@@ -48,7 +48,7 @@ export function getCurrentResult(dom = document) {
     if (title === null) {
         return null;
     } else {
-        return { title: dom.getElementById("productTitle"), manufacturer: manufacturer, name: series ? series : title, category: category, series: series, weight: weight, url: window.location.href, price: price.replace(/^[0-9]/g, "") };
+        return { title: dom.getElementById("productTitle").innerText, manufacturer: manufacturer, name: series ? series : title, category: category, series: series, weight: weight, url: window.location.href, price: price.replace(/^[0-9]/g, "") };
     }
 }
 

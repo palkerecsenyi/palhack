@@ -12,6 +12,8 @@ async function getInfo(product) {
     url.searchParams.append("manufacturer", product.manufacturer);
     url.searchParams.append("categoryName", product.category);
     // TODO pass weight, series, etc
+    console.log(url);
+    console.log(product);
     const response = await fetch(url);
     if (response.ok) {
         return await response.json()
@@ -34,10 +36,10 @@ function getSearchResults(dom = document) {
 
 async function showCarbonForSearch(results) {
     const carbonInfo = []
-    for (const item in results) {
-        carbonInfo.push({ ...item, carbon: await getInfo(item) });
+    for (const item of results) {
+        carbonInfo.push({ ...item, carbon: await getInfo(await getProductDetail(item)) });
     }
-    for (const item in results) {
+    for (const item of results) {
         const btn = document.createElement('button');
         btn.setAttribute('content', carbonInfo[item] + "kg of carbon");
         item.appendChild(btn);
@@ -103,6 +105,7 @@ export default async function Amazon() {
     }
     const results = getSearchResults();
     if (results !== null) {
+        console.log(results);
         await showCarbonForSearch(results)
     }
     console.log(getCurrentResult())
