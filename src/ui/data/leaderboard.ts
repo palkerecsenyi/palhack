@@ -1,6 +1,10 @@
 import { useEffect, useState } from "react"
 import { serverAddress } from "./vars"
 
+export interface LeaderboardEntry {
+
+}
+
 export const useLeaderboard = () => {
     const [leaderboard, setLeaderboard] = useState()
 

@@ -58,20 +58,20 @@ export function getCurrentResult(dom = document) {
     const originalPrice = dom.getElementsByClassName("a-text-price");
     let price;
     if (originalPrice.length && originalPrice[0].dataset.aStrike) {
-        price = originalPrice[0].innerText;
+        price = originalPrice[0].firstElementChild.innerText;
     } else {
         price = dom.getElementById("corePrice_feature_div");
         if (price == null) {
             return null;
         }
-        price = dom.getElementById("corePrice_feature_div").getElementsByClassName("a-offscreen")[0].innerText;
+        price = price.getElementsByClassName("a-offscreen")[0].innerText;
     }
     const categoryNumber = document.getElementById("searchDropdownBox").dataset.navSelected;
     const category = document.getElementById("searchDropdownBox").children[categoryNumber].innerText
     if (title === null) {
         return null;
     } else {
-        return { title: dom.getElementById("productTitle").innerText, manufacturer: manufacturer, name: series ? series : title, category: category, series: series, weight: weight, url: window.location.href, price: price.replaceAll(/^[0-9]/g, ""), currency: getCurrency(price[0]) };
+        return { title: dom.getElementById("productTitle").innerText, manufacturer: manufacturer, name: series ? series : title, category: category, series: series, weight: weight, url: window.location.href, price: price.replaceAll(/[^0-9]/g, ""), currency: getCurrency(price[0]) };
     }
 }
 
