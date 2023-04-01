@@ -10,7 +10,10 @@ export default function LoginPage() {
     }, [username, password])
 
     return <div>
-        <form onSubmit={handleSubmit}>
+        <form
+            onSubmit={handleSubmit}
+            className={styles.form}
+        >
             <label className={styles.credentials}>
                 Username:
                 <input
@@ -33,7 +36,7 @@ export default function LoginPage() {
             </label>
             <p>{ username }</p>
             <p>{ password }</p>
-            <button type="submit">Log in</button>
+            <button type="submit" className={styles.button}>Log in</button>
         </form>
     </div>
 }
