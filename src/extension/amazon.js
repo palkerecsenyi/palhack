@@ -35,7 +35,7 @@ function getSearchResults(dom = document) {
 async function showCarbonForSearch(results) {
     const carbonInfo = []
     for (const item in results) {
-        carbonInfo.push({ ...item, carbon: await getInfo(name, manufacturer, "") });
+        carbonInfo.push({ ...item, carbon: await getInfo(item) });
     }
     for (const item in results) {
         const btn = document.createElement('button');
