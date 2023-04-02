@@ -33,7 +33,7 @@ export default {
                 use: "ts-loader"
             },
             {
-                test: /\.svg$/,
+                test: /\.(svg|gif|png)$/,
                 type: "asset/resource"
             },
         ]

@@ -1,0 +1,69 @@
+.container {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+
+  img {
+    height: 100px;
+  }
+
+  .duckButton {
+    background: none;
+    border: none;
+
+    transition: transform 100ms ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+  }
+}
+
+.duckModal {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(3px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+
+  .modalBody {
+    background-color: wheat;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+
+    .headRow {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .close {
+        background: none;
+        border: none;
+        border-radius: 50%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        width: 30px;
+
+        font-size: 2rem;
+
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.1);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
