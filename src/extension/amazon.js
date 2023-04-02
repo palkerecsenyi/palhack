@@ -45,7 +45,7 @@ async function showCarbonForSearch(results) {
     let i = 0
     for (const item of results) {
         const btn = document.createElement('button');
-        btn.setAttribute('content', carbonInfo[i++] + "kg of carbon");
+        btn.innerText = carbonInfo[i++].carbon + "kg of carbon";
         item.node.appendChild(btn);
     }
 }
