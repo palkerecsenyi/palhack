@@ -37,6 +37,7 @@ function getSearchResults(dom = document) {
 }
 
 async function showCarbonForSearch(results) {
+    results = [results[0]]; // TODO
     const carbonInfo = []
     for (const item of results) {
         carbonInfo.push({ ...item, carbon: await getInfo(await getProductDetail(item)) });
@@ -44,7 +45,7 @@ async function showCarbonForSearch(results) {
     for (const item of results) {
         const btn = document.createElement('button');
         btn.setAttribute('content', carbonInfo[item] + "kg of carbon");
-        item.appendChild(btn);
+        item.node.appendChild(btn);
     }
 }
 
