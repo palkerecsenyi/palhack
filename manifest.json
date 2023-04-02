@@ -13,7 +13,7 @@
 
   "content_scripts": [
     {
-      "matches": ["*://www.amazon.com/*", "*://www.amazon.co.uk/*"],
+      "matches": ["*://www.amazon.com/*", "*://www.amazon.co.uk/*", "file:///home/penn/Downloads/My%20files%202023-04-01T13%2052%2034/Amazon%20Thanks%20You.html"],
       "js": ["dist/extension.js"]
     }
   ],
@@ -26,7 +26,7 @@
     },
     "default_title": "Basket emissions",
     "default_popup": "dist/popup.html",
-    "show_matches": ["*://www.amazon.com/*", "*://www.amazon.co.uk/*"]
+    "show_matches": ["*://www.amazon.com/*", "*://www.amazon.co.uk/*", "file:///home/penn/Downloads/My%20files%202023-04-01T13%2052%2034/Amazon%20Thanks%20You.html"]
   },
   "permissions": ["*://localhost/*", "*://www.amazon.com/*", "*://www.amazon.co.uk/*"]
 }

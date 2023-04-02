@@ -2,7 +2,7 @@ import { getCart, getInfo, getProductDetail } from "../../utils"
 
 interface CartItem {
     title: string
-    url: string
+    url: URL
     node: Node
 }
 export const getCartEmissions = async (): Promise<number> => {

@@ -1,4 +1,4 @@
-import {getProductDetail, getCurrentResult} from '../utils.js';
+import {getProductDetail, getCurrentResult, parseCart, getInfo} from '../utils.js';
 
 
 function getSearchResults(dom = document) {
@@ -20,12 +20,12 @@ async function showCarbonForSearch(results) {
     }
 }
 
-function showCarbonForProduct(product) {
-    const info = getInfo(product)
+async function showCarbonForProduct(product) {
+    const info = await getInfo(product)
     const button = document.createElement("div");
-    button.setAttribute("style", "border: 1px #37c884; color: ")
-    button.setAttribute("content", info.carbon + "kg of carbon");
-    const priceDisplay = document.getElementById("corePriceDisplay_desktop_feature_div");
+    button.style = "background-color: #37c884; color: #000000; padding: 10px;"
+    button.innerText = info + "kg of carbon";
+    const priceDisplay = document.getElementById("corePrice_desktop") ?? document.getElementById("corePriceDisplay_desktop_feature_div");
     priceDisplay.appendChild(button)
 }
 
@@ -70,12 +70,20 @@ async function sendOrderConfirmationData(items) {
 
 }
 
+async function showCartCarbon(cart) {
+    for (const item of cart) {
+        const btn = document.createElement('button');
+        btn.innerText = (await getInfo(await getProductDetail(item))) + "kg of carbon";
+        item.node.appendChild(btn);
+    }
+}
+
 export default async function Amazon() {
     // entrypoint
     const thisProduct = getCurrentResult();
     console.log(thisProduct)
     if (thisProduct !== null) {
-        showCarbonForProduct(thisProduct)
+        await showCarbonForProduct(thisProduct)
     }
     const results = getSearchResults();
     console.log(results);
@@ -87,4 +95,10 @@ export default async function Amazon() {
     if (confirmation !== null) {
         await sendOrderConfirmationData(confirmation)
     }
+    const cart = parseCart();
+    console.log(cart);
+    if (cart !== null) {
+        await showCartCarbon(cart);
+    }
+
 }

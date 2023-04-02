@@ -27,7 +27,7 @@ export async function getProductDetail(product) {
     const response = await fetch(product.url);
     if (response.ok) {
         const responseXml = new DOMParser().parseFromString(await response.text(), "text/html");
-        return getCurrentResult(responseXml);
+        return getCurrentResult(responseXml, product.url);
     } else {
         console.error(response)
         return null;
@@ -36,7 +36,8 @@ export async function getProductDetail(product) {
 
 function getCurrency(currencySymbol) {
     switch(currencySymbol) {
-        case "£":
+        case "\xa3":
+        case "\xc2\xa3":
             return "GBP"
         case "$":
             return "USD"
@@ -44,7 +45,7 @@ function getCurrency(currencySymbol) {
     return ""
 }
 
-export function getCurrentResult(dom = document) {
+export function getCurrentResult(dom = document, baseURI = dom.baseURI) {
     // get the title and url of current page, if it is a product
     let title = dom.getElementById("productTitle");
     if (title == null) {
@@ -90,13 +91,13 @@ export function getCurrentResult(dom = document) {
     if (!price.length) {
         return null;
     }
-    price = price[0].firstElementChild.innerText;
-    const categoryNumber = document.getElementById("searchDropdownBox").dataset.navSelected;
-    const category = document.getElementById("searchDropdownBox").children[categoryNumber].innerText
+    price = price[0].getElementsByClassName("a-offscreen")[0].innerText;
+    const categoryNumber = dom.getElementById("searchDropdownBox").dataset.navSelected;
+    const category = dom.getElementById("searchDropdownBox").children[categoryNumber].innerText
     if (title === null) {
         return null;
     } else {
-        return { title: dom.getElementById("productTitle").innerText, manufacturer: manufacturer, name: series ? series : title, category: category, series: series, weight: weight, url: window.location.href, price: price.replaceAll(/[^0-9]/g, ""), currency: getCurrency(price[0]) };
+        return { title: dom.getElementById("productTitle").innerText, manufacturer: manufacturer, name: series ? series : title, category: category, series: series, weight: weight, url: baseURI, price: price.replaceAll(/[^0-9]/g, ""), currency: getCurrency(price[0]) };
     }
 }
 
@@ -104,10 +105,11 @@ export function getCurrentResult(dom = document) {
  * return output of parseCart
  */
 export async function getCart() {
-    const response = await fetch("https://www.amazon.co.uk/gp/cart/view.html");
+    const url = "https://www.amazon.co.uk/gp/cart/view.html";
+    const response = await fetch(url);
     if (response.ok) {
         const responseXml = new DOMParser().parseFromString(await response.text(), "text/html");
-        return parseCart(responseXml);
+        return parseCart(responseXml, url);
     } else {
         console.error(response)
         return null;
@@ -118,13 +120,13 @@ export async function getCart() {
  * returns a list of {title, url, node}
  * get the full details via [getInfo] compose [getProductDetail]
  */
-export function parseCart(dom = document) {
+export function parseCart(dom = document, baseURI = dom.baseURI) {
     const result = dom.evaluate("//div[contains(concat(' ', normalize-space(@class), ' '), ' sc-list-body ')]/div[@data-itemid!='']", dom, null, XPathResult.ORDERED_NODE_ITERATOR_TYPE, null);
     let node = null;
     const items = [];
     while (node = result.iterateNext()) {
         const title = node.getElementsByClassName("sc-list-item-content")[0].getElementsByTagName("a")[0];
-        items.push({ title: title.getElementsByClassName("a-truncate-full").innerText, url: title.href, node: node });
+        items.push({ title: title.getElementsByClassName("a-truncate-full").innerText, url: new URL(title.getAttribute("href"), baseURI), node: node });
     }
     return items || null;
 }
