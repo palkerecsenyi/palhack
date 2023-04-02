@@ -57,7 +57,7 @@ export function getCurrentResult(dom = document) {
     }
     const originalPrice = dom.getElementsByClassName("a-text-price");
     let price;
-    if (originalPrice.length && originalPrice[0].dataset.aStrike) {
+    if (originalPrice.length && originalPrice[0].dataset.aStrike === "true") {
         price = originalPrice[0].firstElementChild.innerText;
     } else {
         price = dom.getElementById("corePrice_feature_div");
