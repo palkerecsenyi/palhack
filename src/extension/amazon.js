@@ -6,6 +6,9 @@ import {getProductDetail, getCurrentResult} from '../utils.js';
  * @returns {Promise<any|null>} result from server or null
  */
 async function getInfo(product) {
+    if (product == null) {
+        return null;
+    }
     const base = "http://localhost:3000/api/v1/getCarbon";
     const url = new URL(base);
     url.searchParams.append("name", product.name);
@@ -15,7 +18,7 @@ async function getInfo(product) {
     url.searchParams.append("price_currency", product.currency ? product.currency : "")
     const response = await fetch(url);
     if (response.ok) {
-        return await response.json()
+        return (await response.json()).carbon
     } else {
         console.error(response)
         return null;
@@ -77,6 +80,9 @@ async function sendOrderConfirmationData(items) {
     for (const item of items){
         const productDetails = getProductDetail(item)
         const carbonInfo = getInfo(productDetails)
+        if (carbonInfo == null) {
+            continue;
+        }
         carbonTotal = carbonTotal + carbonInfo["Carbon"]
     }
     const base = "http://localhost:3000/api/v1/saveToLeaderboard";
