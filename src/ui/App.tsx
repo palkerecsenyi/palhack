@@ -6,10 +6,11 @@ import LoginPage from "./components/LoginPage"
 import { useAuth } from "./data/auth"
 import Leaderboard from "./components/Leaderboard"
 import Duck, { DuckLevel } from "./components/Duck"
+import { useDuckHappiness } from "./data/cart"
 
 export default function App() {
     const [auth, setAuth] = useAuth()
-    const duckLevel = DuckLevel.Happy
+    const duckLevel = useDuckHappiness()
     return <Container>
         <Carbonabar />
         {auth ? <>
