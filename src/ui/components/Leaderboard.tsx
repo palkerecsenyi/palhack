@@ -12,8 +12,8 @@ export default function Leaderboard() {
                     {entry.username}
                 </p>
             </div>
-            <p>
-                {entry.total}
+            <p className={styles.totalNumber}>
+                {entry.total}kg
             </p>
         </div>)}
     </div>
