@@ -4,9 +4,9 @@ import styles from "../styles/leaderboard.module.scss"
 
 export default function Leaderboard() {
     const leaderboard = useLeaderboard()
-    return <div className={styles.flexContainer}>
-        {leaderboard.map(entry => <div key={entry.username}>
-            <div>
+    return <div >
+        {leaderboard.map(entry => <div key={entry.username} className={styles.flexContainer}>
+            <div className={styles.title}>
                 <img src=""  alt="nothing lol"/>
                 <p>
                     {entry.username}

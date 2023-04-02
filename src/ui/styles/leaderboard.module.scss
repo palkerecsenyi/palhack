@@ -1,21 +1,17 @@
 @import "vars";
 
 .title {
-  font-family: $font-family;
+  background-color: $primary-color;
+  margin: 10px;
+  padding: 10px;
   font-size: 1.5rem;
   width: 100%;
-  display: block;
 }
 
 .flexContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  div {
-    background-color: $primary-color;
-    margin: 10px;
-    padding: 20px;
-    font-size: 30px;
-  }
 }
+
+.
