@@ -2,7 +2,15 @@ import { useEffect, useMemo} from "react"
 import { useAuth } from "./auth"
 import { serverAddress } from "./vars"
 import { AppDispatch, useAppDispatch, useAppSelector } from "../stores/app"
-import { addOwnedProduct, applyCredits, DuckProduct, invalidateCredits, pay, setOwnedProducts } from "../stores/shop"
+import {
+    addOwnedProduct,
+    applyCredits, deselectProduct,
+    DuckProduct,
+    invalidateCredits,
+    pay,
+    selectProduct,
+    setOwnedProducts,
+} from "../stores/shop"
 
 export const useCredits = () => {
     const [authState] = useAuth()
@@ -73,4 +81,24 @@ export const buyProduct = async (token: string, product: DuckProduct, dispatch: 
     dispatch(pay(product.price))
     dispatch(addOwnedProduct(product))
     localStorage.setItem("owned-products", JSON.stringify(newData))
+}
+
+export const saveSelectProduct = (name: string, dispatch: AppDispatch) => {
+    localStorage.setItem("selected-product", name)
+    dispatch(selectProduct(name))
+}
+
+export const useSelectedProduct = () => {
+    const selectedProduct = useAppSelector(state => state.shopsReducer.selectedProductName)
+    const dispatch = useAppDispatch()
+    useEffect(() => {
+        const storedName = localStorage.getItem("selected-product")
+        if (storedName) {
+            dispatch(selectProduct(storedName))
+        } else {
+            dispatch(deselectProduct())
+        }
+    }, [dispatch])
+
+    return selectedProduct
 }

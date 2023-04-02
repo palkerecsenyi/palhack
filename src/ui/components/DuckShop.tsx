@@ -1,11 +1,12 @@
 import React, { useCallback } from "react"
 import styles from "../styles/duck.module.scss"
 import DuckShopItem from "./DuckShopItem"
-import { buyProduct, useCredits } from "../data/shop"
+import { buyProduct, saveSelectProduct, useCredits } from "../data/shop"
 import { DuckProduct } from "../stores/shop"
 import { useAppDispatch } from "../stores/app"
 
 import Croissant from "../assets/duck_products/croissant.png"
+import BlueShirt from "../assets/duck_products/blueshirt.png"
 import { useAuth } from "../data/auth"
 
 export const availableDuckProducts: DuckProduct[] = [
@@ -14,6 +15,12 @@ export const availableDuckProducts: DuckProduct[] = [
         description: "Carbonara ducks are French, so they always appreciate a high-quality pastry.",
         imageUrl: Croissant,
         price: 5,
+    },
+    {
+        name: "Blue shirt",
+        description: "Bath Hack 2023 is the hometown of Carbonara. This shirt reminds him of it :)",
+        imageUrl: BlueShirt,
+        price: 10,
     }
 ]
 
@@ -32,6 +39,10 @@ export default function DuckShop(
 
         await buyProduct(authState, product, dispatch)
     }, [credits, creditsLoading, dispatch, authState])
+
+    const select = useCallback((product: DuckProduct) => {
+        saveSelectProduct(product.name, dispatch)
+    }, [dispatch])
 
     return <div
         className={styles.duckModal}
@@ -58,6 +69,7 @@ export default function DuckShop(
                 item={product}
                 key={product.name}
                 onBuy={() => buy(product)}
+                onSelect={() => select(product)}
             />)}
         </div>
     </div>

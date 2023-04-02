@@ -5,6 +5,9 @@ import DuckDying from "../assets/dying.gif"
 import DuckSad from "../assets/sad.gif"
 import DuckHappy from "../assets/happy.gif"
 import DuckShop from "./DuckShop"
+import { useSelectedProduct } from "../data/shop"
+import DuckCroissant from "../assets/duck_products/croissant.gif"
+import DuckBlueShirt from "../assets/duck_products/blueshirt.gif"
 
 export enum DuckLevel {
     Dead,
@@ -19,6 +22,7 @@ interface props {
 export default function Duck(
     {level}: props
 ) {
+    const selectedProduct = useSelectedProduct()
     const duckUrl = useMemo(() => {
         switch (level) {
             case DuckLevel.Dead:
@@ -28,9 +32,15 @@ export default function Duck(
             case DuckLevel.Sad:
                 return DuckSad
             case DuckLevel.Happy:
-                return DuckHappy
+                if (!selectedProduct) return DuckHappy
+                switch (selectedProduct) {
+                    case "Croissant":
+                        return DuckCroissant
+                    case "Blue shirt":
+                        return DuckBlueShirt
+                }
         }
-    }, [level])
+    }, [level, selectedProduct])
 
     const ImageComponent = useMemo(() => <img
         src={duckUrl}

@@ -11,16 +11,24 @@ interface ShopState {
     credits: number
     creditsLoading: boolean
     ownedProducts: DuckProduct[]
+    selectedProductName?: string
 }
 const initialState: ShopState = {
     credits: 0,
     creditsLoading: true,
-    ownedProducts: []
+    ownedProducts: [],
+    selectedProductName: undefined
 }
 const shopSlice = createSlice({
     name: "shop",
     initialState: initialState,
     reducers: {
+        selectProduct: (state, action: PayloadAction<string>) => {
+            state.selectedProductName = action.payload
+        },
+        deselectProduct: state => {
+            state.selectedProductName = undefined
+        },
         startLoading: state => {
             state.creditsLoading = true
         },
@@ -47,5 +55,5 @@ const shopSlice = createSlice({
     }
 })
 
-export const {startLoading, applyCredits, invalidateCredits, pay, invalidateOwnedProducts, setOwnedProducts, addOwnedProduct} = shopSlice.actions
+export const {deselectProduct, selectProduct, startLoading, applyCredits, invalidateCredits, pay, invalidateOwnedProducts, setOwnedProducts, addOwnedProduct} = shopSlice.actions
 export default shopSlice.reducer

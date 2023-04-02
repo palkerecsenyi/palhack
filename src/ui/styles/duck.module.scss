@@ -129,5 +129,14 @@
       transform: scale(1.05);
       cursor: pointer;
     }
+
+    &:disabled {
+      background-color: gray;
+      cursor: not-allowed;
+      &:hover {
+        transform: none;
+      }
+    }
+
   }
 }
