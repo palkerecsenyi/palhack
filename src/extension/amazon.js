@@ -50,7 +50,6 @@ function showCarbonForProduct(product) {
     button.setAttribute("style", "border: 1px #37c884; color: ")
     button.setAttribute("content", info.carbon + "kg of carbon");
     const priceDisplay = document.getElementById("corePriceDisplay_desktop_feature_div");
-    // todo fix
     priceDisplay.appendChild(button)
 }
 
@@ -58,7 +57,7 @@ function getOrderConfirmationResults() {
     if (window.location.pathname.startsWith("/gp/buy/thankyou/handlers/display.html")) {
         // this is an order confirmation page !! store the products bought
         // find all products purchased
-        const result = dom.evaluate("//span[contains(concat(' ', normalize-space(@class), ' '), ' checkout-quantity-badge ')]/..", document, null, XPathResult.ORDERED_NODE_ITERATOR_TYPE, null);
+        const result = document.evaluate("//span[contains(concat(' ', normalize-space(@class), ' '), ' checkout-quantity-badge ')]/..", document, null, XPathResult.ORDERED_NODE_ITERATOR_TYPE, null);
 
         let node = null;
         const items = [];
@@ -76,24 +75,21 @@ async function sendOrderConfirmationData(items) {
     for (const item of items){
         const productDetails = getProductDetail(item)
         const carbonInfo = getInfo(productDetails)
-        if (carbonInfo == null) {
+        if (carbonInfo === null) {
             continue;
         }
-        carbonTotal = carbonTotal + carbonInfo["Carbon"]
+        carbonTotal += carbonInfo["Carbon"]
     }
     const base = "http://localhost:3000/api/v1/saveToLeaderboard";
     const url = new URL(base);
-    //###########################################
-    // user needs to be changed in the line of code below so it's not hard coded
-    //###########################################
-    url.searchParams.append("username", "user");
+    url.searchParams.append("token", localStorage.getItem("token"));
     url.searchParams.append("carbonForOrder", carbonTotal);
     const response = await fetch(url);
     if (response.ok) {
         return true;
     } else {
         console.error(response)
-        return null;
+        return false;
     }
 
 }
@@ -101,14 +97,18 @@ async function sendOrderConfirmationData(items) {
 export default async function Amazon() {
     // entrypoint
     const thisProduct = getCurrentResult();
+    console.log(thisProduct)
     if (thisProduct !== null) {
         showCarbonForProduct(thisProduct)
     }
     const results = getSearchResults();
+    console.log(results);
     if (results !== null) {
-        console.log(results);
         await showCarbonForSearch(results)
     }
-    console.log(getCurrentResult())
-    console.log(getOrderConfirmationResults())
+    const confirmation = getOrderConfirmationResults();
+    console.log(confirmation);
+    if (confirmation !== null) {
+        await sendOrderConfirmationData(confirmation)
+    }
 }
