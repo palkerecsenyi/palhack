@@ -1,4 +1,4 @@
-import { getCart } from "../../utils"
+import { getCart, getInfo, getProductDetail } from "../../utils"
 
 interface CartItem {
     title: string

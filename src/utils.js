@@ -1,3 +1,28 @@
+/**
+ * get carbon info
+ * @param product output from [getProductDetail]
+ * @returns {Promise<any|null>} result from server or null
+ */
+export async function getInfo(product) {
+    if (product == null) {
+        return null;
+    }
+    const base = "http://localhost:3000/api/v1/getCarbon";
+    const url = new URL(base);
+    url.searchParams.append("name", product.name);
+    url.searchParams.append("manufacturer", product.manufacturer);
+    url.searchParams.append("categoryName", product.category);
+    url.searchParams.append("price_cents", product.price ? product.price : "");
+    url.searchParams.append("price_currency", product.currency ? product.currency : "")
+    const response = await fetch(url);
+    if (response.ok) {
+        return (await response.json()).carbon
+    } else {
+        console.error(response)
+        return null;
+    }
+}
+
 export async function getProductDetail(product) {
     const response = await fetch(product.url);
     if (response.ok) {

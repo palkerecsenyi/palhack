@@ -3,15 +3,10 @@ import styles from "../styles/cartTotal.module.scss"
 import { getCartEmissions } from "../data/cart"
 
 export default function CartTotal() {
-    const co2Total = useMemo(() => {
-        return 15
-    }, [])
-
-    const [cartItems, setCartItems] = useState([])
+    const [co2Total, setCo2Total] = useState<number | undefined>();
     useEffect(() => {
         (async () => {
-            await getCartEmissions()
-            setCartItems([])
+            setCo2Total(await getCartEmissions())
         })()
     }, [])
 

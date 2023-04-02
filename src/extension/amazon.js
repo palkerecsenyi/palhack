@@ -1,29 +1,5 @@
 import {getProductDetail, getCurrentResult} from '../utils.js';
 
-/**
- * get carbon info
- * @param product output from [getProductDetail]
- * @returns {Promise<any|null>} result from server or null
- */
-async function getInfo(product) {
-    if (product == null) {
-        return null;
-    }
-    const base = "http://localhost:3000/api/v1/getCarbon";
-    const url = new URL(base);
-    url.searchParams.append("name", product.name);
-    url.searchParams.append("manufacturer", product.manufacturer);
-    url.searchParams.append("categoryName", product.category);
-    url.searchParams.append("price_cents", product.price ? product.price : "");
-    url.searchParams.append("price_currency", product.currency ? product.currency : "")
-    const response = await fetch(url);
-    if (response.ok) {
-        return (await response.json()).carbon
-    } else {
-        console.error(response)
-        return null;
-    }
-}
 
 function getSearchResults(dom = document) {
     // search for the contents of each search result, return the title and link url
