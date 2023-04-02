@@ -56,7 +56,7 @@ export function getCurrentResult(dom = document, baseURI = dom.baseURI) {
     if (manufacturer.length) {
         manufacturer = manufacturer[0].lastElementChild.innerText;
     } else {
-        manufacturer = null;
+        manufacturer = title.split(/\s/g)[0];
     }
     let series = dom.getElementsByClassName("po-model_name");
     if (series.length) {

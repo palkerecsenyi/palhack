@@ -16,7 +16,8 @@ async function showCarbonForSearch(results) {
     for (const item of results) {
         const div = document.createElement("div");
         div.style = "background-color: #37c884; color: #000000; padding: 10px;"
-        div.innerText = (await getInfo(await getProductDetail(item))) + "kg of carbon";
+        const carbon = (await getInfo(await getProductDetail(item)));
+        div.innerText = carbon != null ? carbon + " kg of carbon" : "Couldn't find carbon emissions data";
         item.node.appendChild(div);
     }
 }
@@ -25,7 +26,7 @@ async function showCarbonForProduct(product) {
     const info = await getInfo(product)
     const div = document.createElement("div");
     div.style = "background-color: #37c884; color: #000000; padding: 10px;"
-    div.innerText = info + "kg of carbon";
+    div.innerText = info != null ? info + " kg of carbon" : "Couldn't find carbon emissions data";
     const priceDisplay = document.getElementById("corePrice_desktop") ?? document.getElementById("corePriceDisplay_desktop_feature_div");
     priceDisplay.appendChild(div)
 }
@@ -75,7 +76,8 @@ async function showCartCarbon(cart) {
     for (const item of cart) {
         const div = document.createElement("div");
         div.style = "background-color: #37c884; color: #000000; padding: 10px;"
-        div.innerText = (await getInfo(await getProductDetail(item))) + "kg of carbon";
+        const carbon = (await getInfo(await getProductDetail(item)));
+        div.innerText = carbon != null ? carbon + " kg of carbon" : "Couldn't find carbon emissions data";
         item.node.appendChild(div);
     }
 }
