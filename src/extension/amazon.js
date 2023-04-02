@@ -14,19 +14,20 @@ function getSearchResults(dom = document) {
 
 async function showCarbonForSearch(results) {
     for (const item of results) {
-        const btn = document.createElement('button');
-        btn.innerText = (await getInfo(await getProductDetail(item))) + "kg of carbon";
-        item.node.appendChild(btn);
+        const div = document.createElement("div");
+        div.style = "background-color: #37c884; color: #000000; padding: 10px;"
+        div.innerText = (await getInfo(await getProductDetail(item))) + "kg of carbon";
+        item.node.appendChild(div);
     }
 }
 
 async function showCarbonForProduct(product) {
     const info = await getInfo(product)
-    const button = document.createElement("div");
-    button.style = "background-color: #37c884; color: #000000; padding: 10px;"
-    button.innerText = info + "kg of carbon";
+    const div = document.createElement("div");
+    div.style = "background-color: #37c884; color: #000000; padding: 10px;"
+    div.innerText = info + "kg of carbon";
     const priceDisplay = document.getElementById("corePrice_desktop") ?? document.getElementById("corePriceDisplay_desktop_feature_div");
-    priceDisplay.appendChild(button)
+    priceDisplay.appendChild(div)
 }
 
 function getOrderConfirmationResults() {
@@ -72,9 +73,10 @@ async function sendOrderConfirmationData(items) {
 
 async function showCartCarbon(cart) {
     for (const item of cart) {
-        const btn = document.createElement('button');
-        btn.innerText = (await getInfo(await getProductDetail(item))) + "kg of carbon";
-        item.node.appendChild(btn);
+        const div = document.createElement("div");
+        div.style = "background-color: #37c884; color: #000000; padding: 10px;"
+        div.innerText = (await getInfo(await getProductDetail(item))) + "kg of carbon";
+        item.node.appendChild(div);
     }
 }
 
