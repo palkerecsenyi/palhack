@@ -60,6 +60,9 @@ export function getCurrentResult(dom = document) {
         price = dom.getElementsByClassName("priceToPay");
     }
     if (!price.length) {
+        price = dom.getElementsByClassName("apexPriceToPay");
+    }
+    if (!price.length) {
         return null;
     }
     price = price[0].firstElementChild.innerText;
