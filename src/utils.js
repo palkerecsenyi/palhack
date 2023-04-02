@@ -94,7 +94,7 @@ export async function getCart() {
  * get the full details via [getInfo] compose [getProductDetail]
  */
 export function parseCart(dom = document) {
-    const result = document.evaluate("//div[contains(concat(' ', normalize-space(@class), ' '), ' sc-list-body ')]/div[@data-itemid!='']", dom, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null);
+    const result = dom.evaluate("//div[contains(concat(' ', normalize-space(@class), ' '), ' sc-list-body ')]/div[@data-itemid!='']", dom, null, XPathResult.ORDERED_NODE_ITERATOR_TYPE, null);
     let node = null;
     const items = [];
     while (node = result.iterateNext()) {
