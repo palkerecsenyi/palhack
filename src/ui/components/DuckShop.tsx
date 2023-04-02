@@ -6,6 +6,7 @@ import { DuckProduct } from "../stores/shop"
 import { useAppDispatch } from "../stores/app"
 
 import Croissant from "../assets/duck_products/croissant.png"
+import { useAuth } from "../data/auth"
 
 export const availableDuckProducts: DuckProduct[] = [
     {
@@ -24,12 +25,13 @@ export default function DuckShop(
 ) {
     const [credits, creditsLoading] = useCredits()
     const dispatch = useAppDispatch()
-    const buy = useCallback((product: DuckProduct) => {
-        if (creditsLoading) return
+    const [authState] = useAuth()
+    const buy = useCallback(async (product: DuckProduct) => {
+        if (!authState || creditsLoading) return
         if (credits < product.price) return
 
-        buyProduct(product, dispatch)
-    }, [credits, creditsLoading, dispatch])
+        await buyProduct(authState, product, dispatch)
+    }, [credits, creditsLoading, dispatch, authState])
 
     return <div
         className={styles.duckModal}

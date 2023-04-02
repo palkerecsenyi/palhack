@@ -2,7 +2,7 @@ import React, { FormEvent, useCallback, useState } from "react"
 import styles from "../styles/inputs.module.scss"
 import { serverAddress } from "../data/vars"
 
-async function login(username: string, password: string) {
+async function login(username: string, password: string): Promise<string | undefined> {
     //const URL = require('url').Url;
     const base = `${serverAddress}/api/v1/verifyLogin`;
     const url = new URL(base);
@@ -19,8 +19,7 @@ async function login(username: string, password: string) {
             return responseText;
         }
     } else {
-        console.error(response)
-        return null;
+        return undefined;
     }
 }
 
@@ -35,15 +34,24 @@ export default function LoginPage(
 ) {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+    const [error, setError] = useState(false)
 
     const handleSubmit = useCallback(async (e: FormEvent) => {
         e.preventDefault()
+        setError(false)
         const token = await login(username, password)
-        onChange(token)
+        if (!token) {
+            setError(true)
+        } else {
+            onChange(token)
+        }
     }, [username, password])
 
     return <div>
         <form onSubmit={handleSubmit} className={styles.form}>
+            {error && <p className={styles.error}>
+                Incorrect username or password!
+            </p>}
             <label className={styles.credentials}>
                 Username:
                 <input

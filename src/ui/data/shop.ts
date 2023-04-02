@@ -53,7 +53,11 @@ export const useIsOwned = (productName: string) => {
     }, [productName, ownedProducts])
 }
 
-export const buyProduct = (product: DuckProduct, dispatch: AppDispatch) => {
+export const buyProduct = async (token: string, product: DuckProduct, dispatch: AppDispatch) => {
+    await fetch(
+        `${serverAddress}/api/v1/subtractDuckCredits?token=${token}&amountSpent=${product.price}`
+    )
+
     const currentData = localStorage.getItem("owned-products")
     let newData: DuckProduct[]
     if (!currentData) {
