@@ -55,17 +55,14 @@ export function getCurrentResult(dom = document) {
             }
         }
     }
-    const originalPrice = dom.getElementsByClassName("a-text-price");
-    let price;
-    if (originalPrice.length && originalPrice[0].dataset.aStrike === "true") {
-        price = originalPrice[0].firstElementChild.innerText;
-    } else {
-        price = dom.getElementById("corePrice_feature_div");
-        if (price == null) {
-            return null;
-        }
-        price = price.getElementsByClassName("a-offscreen")[0].innerText;
+    let price = dom.getElementsByClassName("basisPrice");
+    if (!price.length) {
+        price = dom.getElementsByClassName("priceToPay");
     }
+    if (!price.length) {
+        return null;
+    }
+    price = price[0].firstElementChild.innerText;
     const categoryNumber = document.getElementById("searchDropdownBox").dataset.navSelected;
     const category = document.getElementById("searchDropdownBox").children[categoryNumber].innerText
     if (title === null) {

@@ -1,9 +1,10 @@
 import React, { FormEvent, useCallback, useState } from "react"
 import styles from "../styles/inputs.module.scss"
+import { serverAddress } from "../data/vars"
 
 async function login(username: string, password: string) {
     //const URL = require('url').Url;
-    const base = "http://localhost:30000/api/v1/verifyLogin";
+    const base = `${serverAddress}/api/v1/verifyLogin`;
     const url = new URL(base);
     url.searchParams.append("username", username);
     url.searchParams.append("password", password);

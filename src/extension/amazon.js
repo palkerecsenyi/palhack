@@ -6,7 +6,7 @@ import {getProductDetail, getCurrentResult} from '../utils.js';
  * @returns {Promise<any|null>} result from server or null
  */
 async function getInfo(product) {
-    const base = "http://localhost:30000/api/v1/getCarbon";
+    const base = "http://localhost:3000/api/v1/getCarbon";
     const url = new URL(base);
     url.searchParams.append("name", product.name);
     url.searchParams.append("manufacturer", product.manufacturer);
@@ -82,7 +82,7 @@ async function sendOrderConfirmationData(items) {
         const carbonInfo = getInfo(productDetails)
         carbonTotal = carbonTotal + carbonInfo["Carbon"]
     }
-    const base = "http://localhost:30000/api/v1/saveToLeaderboard";
+    const base = "http://localhost:3000/api/v1/saveToLeaderboard";
     const url = new URL(base);
     //###########################################
     // user needs to be changed in the line of code below so it's not hard coded
