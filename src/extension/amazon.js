@@ -13,9 +13,6 @@ async function getInfo(product) {
     url.searchParams.append("categoryName", product.category);
     url.searchParams.append("price_cents", product.price ? product.price : "");
     url.searchParams.append("price_currency", product.currency ? product.currency : "")
-    // TODO pass weight, series, etc
-    console.log(url);
-    console.log(product);
     const response = await fetch(url);
     if (response.ok) {
         return await response.json()

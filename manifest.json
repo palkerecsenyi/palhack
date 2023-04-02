@@ -28,5 +28,6 @@
     "default_popup": "dist/popup.html",
     "show_matches": ["*://www.amazon.com/*", "*://www.amazon.co.uk/*"]
   },
-  "permissions": ["http://localhost:3000/api/v1/*"]
+  "permissions": ["http://localhost:3000/api/v1/*"],
+  "content_security_policy": "script-src 'self'; object-src 'self'; connect-src 'self' 'http://localhost:3000';"
 }
