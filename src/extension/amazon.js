@@ -42,9 +42,10 @@ async function showCarbonForSearch(results) {
     for (const item of results) {
         carbonInfo.push({ ...item, carbon: await getInfo(await getProductDetail(item)) });
     }
+    let i = 0
     for (const item of results) {
         const btn = document.createElement('button');
-        btn.setAttribute('content', carbonInfo[item] + "kg of carbon");
+        btn.setAttribute('content', carbonInfo[i++] + "kg of carbon");
         item.node.appendChild(btn);
     }
 }
