@@ -4,6 +4,7 @@ import { serverAddress } from "./vars"
 export interface LeaderboardEntry {
     total: number
     username: string
+    url: string
 }
 
 export const useLeaderboard = () => {
