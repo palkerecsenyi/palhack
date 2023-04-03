@@ -145,3 +145,5 @@ src/dist
 dist/*
 !dist/popup.html
 .idea
+
+web-ext-artifacts/

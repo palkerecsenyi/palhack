@@ -2,7 +2,6 @@ import WebExtPlugin from "web-ext-plugin";
 import * as path from "path";
 import {fileURLToPath} from "url";
 export default {
-    mode: "development",
     entry: {
         ui: "./src/ui/index.tsx",
         extension: "./src/extension/index.js"
@@ -46,6 +45,9 @@ export default {
     },
     plugins: [new WebExtPlugin({
         sourceDir: "../../",
-        outputFilename: "../../src/dist/main.js",
+        artifactsDir: "./web-ext-artifacts/",
+        outputFilename: "extension.zip",
+        buildPackage: true,
+        overwriteDest: true,
     })]
 }

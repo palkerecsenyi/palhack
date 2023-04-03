@@ -5,8 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start:firefox": "webpack -w",
-    "test": "web-ext lint --source-dir ./src/"
+    "start:firefox": "webpack -w --mode=development",
+    "build": "webpack b --mode=production"
   },
   "author": "Pal Kerecsenyi, Penn Mackintosh, Caroline Morton, Lara Sheard",
   "license": "UNLICENSED",
